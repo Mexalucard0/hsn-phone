@@ -1,0 +1,8269 @@
+@font-face { font-family: Monthserrat; src: url("/html/Montserrat-Medium.ttf"); } 
+
+* body {
+    font-family:"Montserrat";
+    text-overflow: ellipsis;
+    scroll-behavior: smooth;
+}
+
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #eee;
+  }
+  
+
+/* width */
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/* ::-webkit-scrollbar
+{
+	width: 0;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: rgba(0, 0, 0, 0.705);
+} */
+
+
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(100%, 0); }
+}
+
+.phone-photo-container {
+    display: none;
+    position: absolute;
+    width: 50%;
+    height:50%;
+    left: 25%;
+    top: 25%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+
+
+.phone-photo-container img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: 10% 15%;
+}
+
+.hsn-phonemain {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 80%;
+}
+
+
+.hsn-phonemain .phoneimg {
+    position: absolute;
+    width: 30vh;
+    bottom: 0;
+    right: 0;
+    margin: 5vh;
+    z-index: 150;
+    pointer-events: none;
+    transition: all 0.4s;
+}
+
+
+
+
+.hsn-phonemain .hsn-phonemain-container {
+    height: 61.7vh;
+    width: 29vh;
+    bottom: 1vh;
+    border-radius: 3vh;
+    right: 0.5vh;
+    margin: 5vh;
+    overflow: hidden;
+    position: absolute;
+    background-image: url('images/phone-background-default.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#screenshot-canvas {
+    display: none;
+    height: 100%;
+    height: 100%;
+    border-radius: 3vh;
+    overflow: hidden;
+    position: absolute;
+    background-color: red;
+}
+
+.hsn-phonemain-topcontainer {
+    position: absolute;
+    top: 5.5%;
+    width: 100%;
+    height: 8%;
+}
+
+.phone-apps-notification-container {
+    display: none;
+}
+
+.topcontainer-textside {
+    display: block;
+    position: absolute;
+    top: 11%;
+    width: 50%;
+    left: 25%;
+    height: 30%;
+}
+
+.topcontainer-textside p{
+    text-align: center;
+    color: white;
+    font-size: 90%;
+    font-family: Monthserrat;
+}
+
+
+.hsn-phonemain .hsn-phonemain-topcontainer i{
+    position: relative;
+    float: left;
+    left: 3%;
+    margin-top: 3%;
+    margin-left: 2%;
+    color: white;
+    font-size: 65%;
+}
+
+.hsn-phonemain .hsn-phonemain-topcontainer .downloadapp {
+    display: none;
+}
+
+
+
+@keyframes rollIn {
+    0% {  transform:  rotate(-120deg); }
+    100% {  transform:  rotate(0deg); } 
+ } 
+
+.hsn-phonemain .hsn-phonemain-apps {
+    position: absolute;
+    top: 8%;
+    height: 80%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* Rehber üst kısım */
+
+.hsn-phonemain .hsn-phonemain-apps .hsn-phone-apps {
+    position: relative;
+
+    height: 4.8vh;
+    width: 4.8vh;
+    left: 1vh;
+    float: left;
+    margin-left: 1.75vh;
+    margin-top: 3vh;
+    border-radius: 1.25vh;
+    text-align: center;
+    /* box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.13); */
+    opacity: 0.9;
+    transition: .05s;
+}
+
+.hsn-phonemain .hsn-phonemain-apps .hsn-phone-apps .hsn-phone-apps-iconside {
+    position: relative;
+    width: 47px;
+    height: 47px;
+    border-radius: 23.5px;
+    background-color: rgb(209, 159, 93);
+
+}
+
+.hsn-phonemain .hsn-phonemain-apps .hsn-phone-apps .hsn-phone-apps-textside {
+    color: white;
+    font-size: 50%;
+    text-align: center;
+	margin-right: 4;
+    margin-top: 12%;
+    opacity: 70%;
+    white-space: normal;
+    
+    
+}
+
+
+.hsn-phonemain .hsn-phonemain-apps .hsn-phone-apps:hover  .hsn-phone-apps-textside {
+    opacity: 100%;
+}
+
+
+.hsn-phonemain .hsn-phonemain-apps .hsn-phone-apps .hsn-phone-apps-iconside i{
+    color: rgb(255, 255, 255);
+    font-size: 140%;
+    padding: 27%;
+}
+
+
+
+
+
+
+
+.hsn-phonemain-bank-entry {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(181, 181, 181);
+    top: -100%;
+}
+
+.banks-welcome-container {
+    position: absolute;
+    width: 100%;
+    height: 3%;
+    top: 10%;
+    text-align: center;
+    color: rgb(21, 20, 20);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+
+.banks-bottom-acts {
+    position: relative;
+    top:93%;
+    width: 30%;
+    height: 5%;
+    left: 20%;
+    margin-left: 1%;
+    float: left;
+    color: rgb(21, 20, 20);
+    font-size: 60%;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    outline: none;
+    border: none;
+    background: none;
+    
+}
+
+
+
+.banks-bottom-acts-active{
+    border-bottom: .2vh solid #27ae60;
+    color:  #27ae60;
+}
+
+.banks-imageside {
+    position: absolute;
+    width: 100%;
+    right: 5%;
+    height: 30%;
+    top: 20%;
+    overflow: hidden;
+    
+}
+.banks-imageside img {
+    padding: 0;
+    max-height: 100%;
+    min-width: 100%;
+}
+
+.info-text {
+    position: absolute;
+    width: 95%;
+    left: 5%;
+    height: 5%;
+    top: 57%;
+    font-size: 80%;
+}
+
+
+#bank-iban {
+    position: absolute;
+    border: none;
+    top: 20%;
+    width: 80%;
+    height: 7%;
+    left: 15%;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 5%;
+    color: black;
+}
+
+.banks-newtransfer-icon-2 {
+    position: absolute;
+    width: 15%;
+    height: 7%;
+    top: 30%; 
+}
+
+#bank-amount {
+    position: absolute;
+    border: none;
+    top: 30%;
+    width: 80%;
+    height: 7%;
+    left: 15%;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 5%;
+    color: black;
+}
+
+#SendMoney {
+    position: absolute;
+    width: 30%;
+    height: 3%;
+    left: 35%;
+    top: 50%;
+    outline: none;
+    background: none;
+    font-size: 70%;
+    border: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: border-bottom 0.1s;
+}
+
+#SendMoney:hover {
+    border-bottom: .2vh solid #ae2b27;
+}
+
+
+.banks-newtransfer-icon {
+    position: absolute;
+    width: 15%;
+    height: 7%;
+    top: 20%;
+    
+}
+
+.banks-newtransfer-icon-2 i{
+    color: black;
+    font-size: 150%;
+    padding-top: 12%;
+    padding-left: 30%;
+}
+
+.banks-newtransfer-icon i {
+    color: black;
+    font-size: 150%;
+    padding-top: 12%;
+    padding-left: 20%;
+}
+
+
+.bank-informantion {
+    position: absolute;
+    width: 95%;
+    left: 5%;
+    height: 30%;
+    top: 60%;
+    border-top: .1vh solid rgba(79, 79, 79, 0.741);
+    
+    
+}
+
+.bank-info {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    
+    margin-top: 2%;
+}
+
+.bank-info-iconside {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    
+    
+}
+
+.bank-info-iconside i{
+    color: rgb(177, 52, 59);
+    font-size: 180%;
+    
+    padding-top: 25%;
+}
+
+.bank-info-textside {
+    position: absolute;
+    width: 60%;
+    height: 30%;
+    left: 20%;
+    top: 60%;
+    color: rgb(41, 41, 41);
+    padding-top: 1%;
+    font-size: 50%;
+    
+}
+
+.bank-info-integerinfo {
+    position: absolute;
+    width: 60%;
+    height: 40%;
+    left: 20%;
+    top: 20%;
+    color: black;
+    padding-top: 1%;
+    font-size: 70%;
+}
+
+
+
+.banks-newtransfer-container {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 1%;
+    background-color: rgb(181, 181, 181);
+    left: -80%;
+}
+
+
+.banks-recents-container {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 1%;
+    left: -80%;
+    background-color: rgb(181, 181, 181);
+}
+
+.recents-container {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 10%;
+    overflow-x: hidden;
+    overflow-y: visible; 
+}
+
+.recents-ply-container {
+    position: relative;
+    margin-top: 2%;
+    width: 95%;
+    left: 2.5%;
+    height: 15%;
+   
+    
+}
+
+
+.recents-ply-container-plyname {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    bottom: 0;
+    
+    left: 5%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: rgb(41, 41, 41);
+    font-size: 50%;
+    text-align: center;
+}
+
+.recents-ply-container-plyphoto {
+    position: absolute;
+    width: 20%;
+    height: 60%;
+    top: 17%;
+    left: 5%;
+    border-radius: 15%;
+    overflow: hidden;
+}
+
+.recents-ply-container-timeago{
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    bottom: 0;
+    left: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: rgb(41, 41, 41);
+    font-size: 50%;
+    text-align: center;
+}
+
+
+.text-iconcontainer {
+    position: relative;
+    width: 80%;
+    height: 60%;
+    top: 20%;
+}
+
+.text-iconcontainer i{
+    color: white;
+    padding-left: 60%;
+    padding-top: 20%;
+}
+
+.recents-ply-container-plyphoto img{
+    padding: 0;
+    max-height: 100%;
+    min-width: 100%;
+}
+
+.recents-ply-container-plyinfo {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    left: 30%;
+    
+    float: left;
+    margin-left: 1%;
+}
+
+
+
+
+.recents-ply-container-plyinfo .text{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    
+    float: left;
+    margin-left: 2%;
+}
+
+
+.recents-ply-container-plyinfo .text .text-title {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    
+    top: 15%;
+    color: black;
+    padding-top: 10%;
+    font-size: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+
+
+.recents-ply-container-plyinfo .text .text-description {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    top: 20%;
+    
+    color: rgb(41, 41, 41);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 50%;
+    padding-top: 1%;
+}
+
+
+
+
+
+
+/* Bottom Container Alt Taraf */
+.hsn-phonemain .hsn-phonemain-bottomcontainer{
+    position: absolute;
+    top:85%;
+    width: 100%;
+    height: 10%;
+    border-radius: 6%;
+}
+
+/* Alt Kısım Ayarlar */
+
+.hsn-phonemain .hsn-phonemain-bottomcontainer .hsn-phonemain-bottomcontainer-settings {
+    position: relative;
+    width: 17%;
+    height: 100%;
+    margin-left: 10%;
+    left: 3%;
+    float: left;
+}
+.hsn-phonemain .hsn-phonemain-bottomcontainer .hsn-phonemain-bottomcontainer-settings .hsn-phonemain-bottomcontainer-settings-photo {
+    position: relative;
+    border-radius: 22.5px;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(209, 159, 93);
+}
+
+.hsn-phonemain .hsn-phonemain-bottomcontainer .hsn-phonemain-bottomcontainer-settings .hsn-phonemain-bottomcontainer-settings-photo i{
+    position: relative;
+    color: white;
+    top: 20%;
+    left: 20%;
+    font-size: 170%;
+}
+
+/* Alt Kısım Aramalar */
+
+.hsn-phonemain .hsn-phonemain-bottomcontainer .hsn-phonemain-bottomcontainer-gallery {
+    position: relative;
+    width: 17%;
+    height: 100%;
+    left: 2%;
+    float: left;
+    margin-left: 2%;
+}
+
+.hsn-phonemain .hsn-phonemain-bottomcontainer .hsn-phonemain-bottomcontainer-gallery .hsn-phonemain-bottomcontainer-gallery-photo {
+    position: relative;
+    border-radius: 22.5px;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(132, 132, 136);
+}
+
+.hsn-phonemain .hsn-phonemain-bottomcontainer .hsn-phonemain-bottomcontainer-gallery .hsn-phonemain-bottomcontainer-gallery-photo i{
+    position: relative;
+    color: white;
+    top: 21%;
+    left: 17%;
+    font-size: 180%;
+}
+
+/* Alt Kısım Ana Ekran */
+
+.hsn-phonemain .hsn-phonemain-bottomcontainer .hsn-phonemain-bottomcontainer-homepage {
+    position: relative;
+    width: 17%;
+    height: 100%;
+    left: 2%;
+    float: left;
+    margin-left: 2%;
+}
+
+.hsn-phonemain .hsn-phonemain-bottomcontainer .hsn-phonemain-bottomcontainer-homepage .hsn-phonemain-bottomcontainer-homepage-photo {
+    position: relative;
+    border-radius: 22.5px;
+    width: 45px;
+    height: 45px;
+    background-color:  #ff4b5a9c;
+}
+
+.hsn-phonemain .hsn-phonemain-bottomcontainer .hsn-phonemain-bottomcontainer-homepage .hsn-phonemain-bottomcontainer-homepage-photo i{
+    position: relative;
+    color: rgba(255, 255, 255, 0.796);
+    top: 21%;
+    left: 18%;
+    font-size: 180%;
+}
+
+/* Alt Kısım Rehber */
+
+.hsn-phonemain .hsn-phonemain-bottomcontainer .hsn-phonemain-bottomcontainer-whatsapp {
+    position: relative;
+    width: 17%;
+    height: 100%;
+    left: 2%;
+    float: left;
+    margin-left: 2%;
+}
+
+.hsn-phonemain .hsn-phonemain-bottomcontainer .hsn-phonemain-bottomcontainer-whatsapp .hsn-phonemain-bottomcontainer-whatsapp-photo {
+    position: relative;
+    border-radius: 22.5px;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(27, 199, 11);
+}
+
+.hsn-phonemain .hsn-phonemain-bottomcontainer .hsn-phonemain-bottomcontainer-whatsapp .hsn-phonemain-bottomcontainer-whatsapp-photo i{
+    position: relative;
+    color: white;
+    top: 21%;
+    left: 22%;
+    font-size: 180%;
+}
+
+/* Alt Kısım Kamera */
+
+.hsn-phonemain .hsn-phonemain-bottomcontainer .hsn-phonemain-bottomcontainer-camera {
+    position: relative;
+    width: 17%;
+    height: 100%;
+    left: 2%;
+    float: left;
+    margin-left: 2%;
+}
+
+.hsn-phonemain .hsn-phonemain-bottomcontainer .hsn-phonemain-bottomcontainer-camera .hsn-phonemain-bottomcontainer-camera-photo {
+    position: relative;
+    border-radius: 22.5px;
+    width: 45px;
+    height: 45px;
+    background-color:  #e6543d;
+}
+
+
+.hsn-phonemain .hsn-phonemain-bottomcontainer .hsn-phonemain-bottomcontainer-camera .hsn-phonemain-bottomcontainer-camera-photo i{
+    position: relative;
+    color: white;
+    top: 21%;
+    left: 22%;
+    font-size: 150%;
+}
+
+
+/* notifications */
+
+
+.hsn-phonemain-notifications-entry {
+    display: none;
+    position: relative;
+    width: 100%;
+    top: 5.5%;
+    border-radius: 8%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+
+.notifications-date {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 10%;
+}
+
+.notifications-date h1 {
+    color: white;
+    text-align: center;
+}
+
+.hsn-phonemain-notifications-entry .notifications-container {
+    position: relative;
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 10%;
+}
+
+.hsn-phonemain-notifications-entry .notifications-container .notifications-container-index {
+    position: relative;
+    width: 100%;
+    height: 18%;
+    margin-top: 5%;
+    border-radius: 3px;
+}
+
+.hsn-phonemain-notifications-entry .notifications-container .notifications-container-index .notifications-container-index-topside {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    background-color: rgb(233, 233, 233);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.hsn-phonemain-notifications-entry .notifications-container .notifications-container-index .notifications-container-index-topside .notifications-container-index-topside-appicon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    left: 3%;
+    top: 20%;
+}
+
+
+.hsn-phonemain-notifications-entry .notifications-container .notifications-container-index .notifications-container-index-topside .notifications-container-index-topside-delete {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    right: 0;
+}
+
+.hsn-phonemain-notifications-entry .notifications-container .notifications-container-index .notifications-container-index-topside  .notifications-container-index-topside-appname {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top: 30%;
+    left: 12%;
+
+}
+
+.hsn-phonemain-notifications-entry .notifications-container .notifications-container-index .notifications-container-index-topside  .notifications-container-index-topside-appname p{
+    color: rgba(90, 89, 87, 0.877);
+    font-size: 70%;
+    text-align: center;
+}
+
+.hsn-phonemain-notifications-entry .notifications-container .notifications-container-index .notifications-container-index-topside .notifications-container-index-topside-delete i{
+    position: relative;
+    top: 30%;
+    left: 30%;
+    font-size: 80%;
+    color: rgba(90, 89, 87, 0.877);
+}
+
+.hsn-phonemain-notifications-entry .notifications-container .notifications-container-index .notifications-container-index-topside .notifications-container-index-topside-appicon i {
+    position: relative;
+    margin: 1%;
+    color: rgba(90, 89, 87, 0.877);
+}
+
+.hsn-phonemain-notifications-entry .notifications-container .notifications-container-index .notifications-container-index-bottomside {
+    position: relative;
+    background-color: rgba(233, 233, 233, 0.877);
+    width: 100%;
+    height: 60%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.hsn-phonemain-notifications-entry .notifications-container .notifications-container-index .notifications-container-index-bottomside p{
+    position: relative;
+    font-size: 10px;
+    top: 10%;
+    left: 3%;
+}
+
+/* APPS */
+
+.hsn-phonemain-apps-entry {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: -100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y: visible;
+    
+}
+
+
+/* apps twitter */
+
+.hsn-phonemain-apps-entry  .twitter {
+    position: relative;
+    margin-top: 5%;
+    top: 2%;
+    left: 11%;
+    width: 80%;
+    height: 40%;
+    border-radius: 10px;
+}
+
+.hsn-phonemain-apps-entry  .twitter .twitter-photoside {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url('https://cdn.discordapp.com/attachments/764670052678369311/814461205854552064/thumbs_b_c_926b2392f10cc0f1266b0a8c66c7c9bb.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;           
+}
+
+.hsn-phonemain-apps-entry  .twitter .twitter-photoside p {
+    position: relative;
+    color:white;
+    top: 3%;
+    left: 3%;
+    font-size: 80%;
+    opacity: 70%;
+}
+
+.hsn-phonemain-apps-entry  .twitter .twitter-photoside strong {
+    position: absolute;
+    color:white;
+    margin-top: 3%;
+    left: 3%;
+    font-size: 70%;
+}
+
+.hsn-phonemain-apps-entry  .twitter .twitter-textside {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.hsn-phonemain-apps-entry   .twitter .twitter-textside .apss-name {
+    position: relative;
+    color: white;
+    font-size: 70%;
+    float: left;
+    left: 25%;
+    top: 5%;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+
+.hsn-phonemain-apps-entry   .twitter .twitter-textside .download {
+    position: relative;
+    color: white;
+    opacity: 80%;
+    left: 25%;
+    top: 30%;
+    width: 50%;
+    height: 50%;
+}
+
+.hsn-phonemain-apps-entry  .twitter .twitter-textside .download i{
+    position: relative;
+    bottom:  80%;
+    left: 40%;
+}
+
+.calls-main {
+    display: none;
+    position: relative;
+    width: 100%;
+    top: -100%;
+    height: 100%;
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.last-calls {
+    position: relative;
+    top: 8%;
+    height: 85%;
+}
+
+.calls-callside {
+    display: none;
+    position: relative;
+    top: 8%;
+    height: 85%;
+}
+
+.calls-callside .callnumber {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-left: 6%;
+    margin-top: 89%;
+    border: none;
+    background-color:rgb(11, 197, 11);
+    outline: none;
+    border-bottom: 2px solid rgb(11, 197, 11);
+    resize: none;
+    transition: border-bottom 0.1s ease-in-out;
+}
+
+.calls-callside .callnumber i {
+    color: white;
+    margin-top: -65%;
+    margin-left: 30%;
+}
+
+.buttons-output {
+    position: absolute;
+    width: 70%;
+    height: 9%;
+    left: 15%;
+    top: 10%;
+    box-shadow: 4px 3px 3px rgb(20, 20, 20);
+    overflow: hidden;
+}
+
+.buttons-output p {
+    text-align: center;
+    padding-top: 6%;
+    color: white;
+}
+
+.calls-buttonside {
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    left: 10%;
+    top: 30%;
+}
+
+.callside-buttons {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    float: left;
+    margin-left: 6%;
+    margin-top: 3%;
+
+    border: none;
+    background-color: #333333;
+    outline: none;
+    border-bottom: 2px solid #1da0f200;
+    resize: none;
+    transition: border-bottom 0.1s ease-in-out;
+    font-family: 'Heebo', sans-serif;
+    box-shadow: inset 0 0 2vh 0 rgba(0, 0, 0, 0.089);  
+}
+
+.callside-buttons p {
+    color: white;
+    padding-top: 40%;
+    padding-left: 40%;
+}
+
+.removeoutput {
+    width: 8%;
+    height: 5%;
+    position: absolute;
+    left: 70%;
+    top: 72%;
+}
+
+.removeoutput i{
+    color: white;
+}
+
+.callside-buttons[id="0"] {
+    margin-left: 37%;
+    transition: all 1s ease-in-out;
+}
+
+.callside-buttons:active, .callside-buttons p:active{
+	font-size: 15px;
+}
+
+
+
+.lastcalls-0notify {
+    display: none;
+    position: absolute;
+    top: 12%;
+    width: 100%;
+    height: 10%;
+}
+.lastcalls-0notify p{
+    color: white;
+    text-align: center;
+    font-size: 80%;
+}
+.last-calls .lastcallstextside {
+    position: absolute;
+    width: 93%;
+    left: 7%;
+    height: 5%;
+    top: 4%;
+    border-bottom: .1vh solid rgba(131, 131, 131, 0.699);
+}
+
+.last-calls .lastcallstextside span {
+    color: white;
+    font-size: 110%;
+}
+
+.last-calls .player-lastcalls .lastcalls-container{
+    position: absolute;
+    top:9%;
+    width: 100%;
+    height: 85%;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.last-calls .player-lastcalls .lastcalls-container .calls{
+    position: relative;
+    width: 93%;
+    left: 7%;
+    height: 10%;
+    border-bottom: .1vh solid rgba(131, 131, 131, 0.699);
+    transition: left 600ms ease-in-out;
+}
+
+
+.onlytest {
+    position: absolute;
+    width: 20%;
+    top: 0;
+    height: 100%;
+    left:0;
+    display: none;
+    transition: all 600ms ease-in-out;
+    background-color: #ff4539;
+    border-bottom: .1vh solid #ff4539;
+}
+
+.onlytest i {
+    color: white;
+    font-size: 90%;
+    padding-left: 20%;
+    padding-top: 30%;
+}
+.last-calls .player-lastcalls .lastcalls-container .calls .calls-callername {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+}
+
+.last-calls .player-lastcalls .lastcalls-container .calls .calls-callername p{
+    color: white;
+    font-size: 80%;
+    text-align: left;
+    padding-top: 3%;
+}
+
+.last-calls .player-lastcalls .lastcalls-container .calls .calls-icon {
+    position: absolute;
+    width: 10%;
+    height: 50%;
+    top: 25%;
+    left: 85%;
+    overflow: hidden;
+}
+.last-calls .player-lastcalls .lastcalls-container .calls .calls-icon i {
+    color: rgba(255, 255, 255, 0.699);
+    padding-top: 7%;
+    padding-left:35%;
+}
+
+
+.last-calls .player-lastcalls .lastcalls-container .calls .calls-time {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 25%;
+    left: 55%;
+    overflow: hidden;
+}
+
+.last-calls .player-lastcalls .lastcalls-container .calls .calls-time p {
+    color: rgba(255, 255, 255, 0.699);
+    font-size: 60%;
+    text-align: center;
+    padding-top: 8%;
+}
+.calls-bottomcontainer {
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    height: 7%;
+}
+
+.calls-bottomcontainer .interaction {
+    position: relative;
+    height: 80%;
+    width: 20%;
+    top: 10%;
+    margin-left: 20%;
+    float: left;
+}
+
+.calls-bottomcontainer .interaction i {
+    color: rgba(255, 255, 255, 0.788);
+    position: relative;
+    top: 20%;
+    font-size: 100%;
+    left: 30%;
+}
+
+.twitter-main {
+    display: none;
+    position: relative;
+    width: 100%;
+    top: 0%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+
+}
+
+.twitter-main .twitter-main-bottomcontainer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height:  10%;
+}
+.twitter-main .twitter-main-bottomcontainer .twitter-main-addtweet {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.twitter-main .twitter-main-bottomcontainer .twitter-settingspage{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+}
+.twitter-main .twitter-main-bottomcontainer .twitter-main-addtweet i {
+    position: absolute;
+    color: white;
+    left: 45%;
+    top: 20%;
+    transition: all 0.5s;
+}
+
+.twitter-main .twitter-main-bottomcontainer .twitter-settingspage i {
+    position: absolute;
+    color: white;
+    left: 45%;
+    top: 20%;
+    transition: all 0.5s;
+}
+
+.twitter-main .twitter-main-bottomcontainer .twitter-settingspage i:hover {
+    transform:  scale(1.5);
+}
+.twitter-main .twitter-main-bottomcontainer .twitter-main-addtweet i:hover {
+    transform:  scale(1.5);
+}
+
+.login-showcontainer {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    top: 80%;
+}
+
+.login-icon {
+    position: absolute;
+    top: 85%;
+    width: 10%;
+    height: 5%;
+    left: 45%;
+}
+.login-icon i{
+    color: white;
+}
+
+.twitter-main {
+    position: absolute;
+    background-color: #1b2836;
+}
+
+
+.twitter-main .twitter-main-side {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    top: 5%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+
+.twitter-main .twitter-main-side::-webkit-scrollbar {
+    
+    width: 0.4vh;
+}
+
+
+
+.twitter-addtweet-container {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0.1%;
+    border-radius: 6%;
+    height: 100%;
+    background-color: #1b2836;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.twitter-textbox-container {
+    position: absolute;
+    width: 70%;
+    left: 10%;
+    top: 5%;
+    height: 40%;
+}
+
+
+.twitter-addtweet-container span{
+    position: absolute;
+    left: 11%;
+    top: 8%;
+    color: white;
+    font-size: 90%;
+}
+
+
+.twitter-main-side .twitter-tweetside {
+    position: relative;
+    width: 96%;
+    min-height: 15%;
+    margin-top: 10%;
+	margin-left: 8;
+    height: auto;
+    border-bottom: 0.05vh solid rgb(110, 110, 110);
+    overflow: hidden;
+}
+
+.twitter-main-side .twitter-tweetside .tweetside-username {
+    position: relative;
+    width: auto;
+    height: 15px;
+    margin-left: 22%;
+    margin-top:1%;
+    font-size: 60%;
+    color: rgb(163, 163, 163);
+    overflow:hidden; 
+    white-space: nowrap; /* Yazıyı tek satırla sınırlandırıyoruz */
+    text-overflow:ellipsis;
+    float: left;
+    
+    
+}
+
+.twitter-selectfromgallery {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    right: 2%;
+    top: 38%;
+}
+
+.twitter-selectfromgallery i {
+    color: white;
+    padding-left: 20%;
+    transition: color 0.6s;
+}
+
+.twitter-selectfromgallery:hover i {
+    color:  #0096c7;
+}
+
+.tweetside-f-lastname{
+    position: relative;
+    width: auto;
+    height: 15px;
+    left: 20%;
+    margin-top:1%;
+    float: left;
+    font-size: 70%;
+    color: #fff;
+    overflow:hidden; 
+    white-space: nowrap; /* Yazıyı tek satırla sınırlandırıyoruz */
+    text-overflow:ellipsis;
+    
+}
+
+.tweetside-timediff{
+    position: absolute;
+    width: auto;
+    height: 15px;
+    right: 2%;
+    margin-top:1.5%;
+    font-size: 60%;
+    max-width: 25px;
+    color: rgb(163, 163, 163);
+    overflow:hidden; 
+    white-space: nowrap; /* Yazıyı tek satırla sınırlandırıyoruz */
+    text-overflow:ellipsis;
+    float: left;
+}
+
+.twitter-main-side .twitter-tweetside .tweetside-playerphoto {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 2%;
+    top: 1%;
+    border-radius: 27.5px;
+    overflow: hidden;
+}
+
+.twitter-tweetside .tweetside-icons {
+    position: sticky;
+    width: 20px;
+    height: 20px;
+    top: 100%;
+    float: left;
+    left: 35%;
+    margin-left: 25%;
+    
+}
+
+
+
+.twitter-tweetside .tweetside-icons i {
+    color: #6b7d8c;
+    font-size: 80%;
+    padding-top: 20%;
+    padding-left: 10%;
+    transition: 0.4s color;
+}
+
+.twitter-tweetside .tweetside-icons[id="like"]:hover i {
+    color: #d00000;
+}
+
+.twitter-tweetside .tweetside-icons p {
+    color: #6b7d8c;
+    font-size: 80%;
+    margin-top: -60%;
+    padding-left: 90%;
+}
+
+
+
+
+
+.twitter-main-side .twitter-tweetside .tweetside-playerphoto img{
+    padding: 0;
+    max-height: 100%;
+    min-width: 100%;
+}
+
+.twitter-main-side .twitter-tweetside .tweetside-messagebox {
+    position: relative;
+    width: auto;
+    height: auto;
+    left: 18%;
+    margin-top: 8%;
+    max-width: 85%;
+    
+}
+
+.twitter-main-side .twitter-tweetside .tweetside-messagebox .tweetside-textside {
+    position: relative;
+    height: auto;
+    width: 80%;
+    margin-left: 2%;
+    margin-top: 2%;
+    color: rgb(212, 212, 212);
+    font-size: 70%;
+    
+}
+
+
+
+.twitter-main-side .twitter-tweetside .tweetside-messagebox .tweetside-photoside {
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin-top: 3%;
+}
+
+.twitter-main-side .twitter-tweetside .tweetside-messagebox .tweetside-photoside img {
+    max-width:100%;
+    min-width:100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.twitter-settings-container {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0.1%;
+    height: 100%;
+    background-color: rgb(116, 116, 116);
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.twitter-settings-userphoto {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    top: 10%;
+    left: 5%;
+    overflow: hidden;
+}
+
+.twitter-settings-username {
+    position: absolute;
+    width: 40%;
+    height: 4%;
+    top: 15%;
+    left: 45%;
+}
+
+.twitter-settings-username p {
+    color: rgb(212, 212, 212);
+    font-size: 80%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.twitter-settings-userphoto img {
+    padding: 0;
+    max-height: 100%;
+    min-width: 100%;
+}
+
+.twitter-settings-username- {
+    position: absolute;
+    width: 40%;
+    height: 4%;
+    top: 12%;
+    left: 45%;
+    color: white;
+    font-size: 80%;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+
+
+.twitter-settings-index {
+    position: relative;
+    width: 100%;
+    height: 8%;
+    top: 30%;
+    margin-top: 3%;
+    background-color: rgb(133, 131, 131);
+}
+.twitter-settings-index p {
+    font-size: 70%;
+    color: rgb(255, 255, 255);
+    padding-top: 6%;
+    padding-left: 5%;
+}
+
+.twitter-settings-index .twitter-settings-index-class {
+    position: absolute;
+    width: 5%;
+    height: 40%;
+    top: 30%;
+    left: 85%;
+    transition: color 1s ease-in-out;
+}
+
+
+.twitter-settings-index .twitter-settings-index-class i {
+    color: white;
+    transition: color 600ms ease-in-out;
+}
+
+.twitter-settings-index-class i:hover {
+    color: #457b9d;
+}
+
+
+#deleteaccount:hover i {
+    color: red;
+}
+
+
+
+
+
+.send {
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    width: 40%;
+    height: 6%;
+    border-radius: 10px;
+    background-color: rgb(20, 127, 165);
+    color: rgba(255, 255, 255, 0.863);
+    transition: all 500ms;
+    font-family: "Montserrat";
+}
+
+.send:hover {
+    color: black;
+}
+
+#tweet-new-message {
+    position: absolute;
+    border: none;
+    height: 15vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color: rgb(233, 233, 233);
+    outline: none;
+    border-left: 2px solid #1da0f200;
+    resize: none;
+    transition: all 0.1s ease-in-out;
+    font-family: 'Heebo', sans-serif;
+    padding: 0.87vh;
+    font-size: 1.4vh;
+    top: 12%;
+    width: 22vh;
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: inset 0 0 2vh 0 rgba(0, 0, 0, 0.089);
+}
+
+
+#tweet-new-url{
+    position: absolute;
+    border: none;
+    height: 5vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color: rgb(233, 233, 233);
+    outline: none;
+    color: rgba(0, 0, 0, 0.87);
+    border-bottom: 2px solid #1da0f200;
+    resize: none;
+    transition: all 0.1s ease-in-out;
+    font-family: 'Heebo', sans-serif;
+    padding: 0.87vh;
+    font-size: 1.4vh;
+    top: 35%;
+    width: 22vh;
+    border-radius: 0 0 1vh 1vh;
+    box-shadow: inset 0 0 2vh 0 rgba(0, 0, 0, 0.089);  
+}
+
+#tweet-new-message::-webkit-scrollbar {
+    display: none;
+}
+
+#tweet-new-message::placeholder {
+    font-size: 1.4vh;
+    font-family: 'Heebo', sans-serif;
+    color: rgba(0, 0, 0, 0.719);
+}
+
+#tweet-new-url::placeholder {
+    font-size: 1.4vh;
+    font-family: 'Heebo', sans-serif;
+    color: rgba(0, 0, 0, 0.719);
+}
+
+#tweet-new-message:focus {
+    border-left: 5px solid #1da0f2b0;
+}
+
+
+.böyletelefonunaminakoyayim {
+    position: absolute;
+    width: 80%;
+    height: 20%;
+    left: 10%;
+    top: 60%;
+    background-image: url('');
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;           
+}
+
+
+
+
+
+
+
+
+/* apps yellowpages */
+
+.hsn-phonemain-apps-entry  .twitch {
+    position: relative;
+    left: 11%;
+    width: 80%;
+    height: 40%;
+    border-radius: 10px;
+    margin-top: 5%;
+    top: 8%;
+}
+
+.hsn-phonemain-apps-entry  .twitch .twitch-photoside {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url('https://i.sozcu.com.tr/wp-content/uploads/2021/01/23/iecrop/tiktok-shutter_16_9_1611404803-880x495.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;           
+}
+
+.hsn-phonemain-apps-entry  .twitch .twitch-photoside p {
+    position: relative;
+    color:white;
+    top: 3%;
+    left: 3%;
+    font-size: 80%;
+    opacity: 70%;
+}
+
+.hsn-phonemain-apps-entry  .twitch .twitch-photoside strong {
+    position: absolute;
+    color:white;
+    margin-top: 3%;
+    left: 3%;
+    font-size: 70%;
+}
+
+.hsn-phonemain-apps-entry  .twitch .twitch-textside {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+
+.hsn-phonemain-apps-entry  .twitch .twitch-textside .apss-name {
+    position: relative;
+    color: white;
+    font-size: 70%;
+    float: left;
+    left: 25%;
+    top: 5%;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+
+.hsn-phonemain-apps-entry  .twitch .twitch-textside .download {
+    position: relative;
+    color: white;
+    opacity: 80%;
+    left: 25%;
+    top: 30%;
+    width: 50%;
+    height: 50%;
+}
+
+.hsn-phonemain-apps-entry  .twitch .twitch-textside .download i{
+    position: relative;
+    bottom:  80%;
+    left: 40%;
+}
+
+
+/* Notes */
+
+.hsn-phonemain-apps-entry  .Advertisement {
+    position: relative;
+    left: 11%;
+    width: 80%;
+    height: 40%;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-top: 3%;
+}
+
+.hsn-phonemain-apps-entry  .Advertisement .Advertisement-photoside {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url('https://www.ismailgursoy.com.tr/wp-content/uploads/2016/09/Yellow-Pages-UAE.png');
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;           
+}
+
+.hsn-phonemain-apps-entry  .Advertisement .Advertisement-photoside p {
+    position: relative;
+    color:white;
+    top: 3%;
+    left: 3%;
+    font-size: 80%;
+    opacity: 70%;
+}
+
+.hsn-phonemain-apps-entry  .Advertisement .Advertisement-photoside strong {
+    position: absolute;
+    color:white;
+    margin-top: 3%;
+    left: 3%;
+    font-size: 70%;
+}
+
+.hsn-phonemain-apps-entry  .Advertisement .Advertisement-textside {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.hsn-phonemain-apps-entry  .Advertisement .Advertisement-textside .apss-name {
+    position: relative;
+    color: white;
+    font-size: 70%;
+    float: left;
+    left: 25%;
+    top: 5%;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+
+.hsn-phonemain-apps-entry  .Advertisement .Advertisement-textside .download {
+    position: relative;
+    color: white;
+    opacity: 80%;
+    left: 25%;
+    top: 30%;
+    width: 50%;
+    height: 50%;
+}
+
+.hsn-phonemain-apps-entry  .Advertisement .Advertisement-textside .download i{
+    position: relative;
+    bottom:  80%;
+    left: 40%;
+}
+
+/* Cars */
+
+.hsn-phonemain-apps-entry  .cars {
+    position: relative;
+    left: 11%;
+    width: 80%;
+    height: 40%;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-top: 3%;
+}
+
+.hsn-phonemain-apps-entry  .cars .cars-photoside {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url('https://ichef.bbci.co.uk/news/976/cpsprodpb/10958/production/_110982976_chinacarshowroom_getty.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;           
+}
+
+.hsn-phonemain-apps-entry  .cars .cars-photoside p {
+    position: relative;
+    color:white;
+    top: 3%;
+    left: 3%;
+    font-size: 80%;
+    opacity: 70%;
+}
+
+.hsn-phonemain-apps-entry  .cars .cars-photoside strong {
+    position: absolute;
+    color:white;
+    margin-top: 3%;
+    left: 3%;
+    font-size: 70%;
+}
+
+.hsn-phonemain-apps-entry  .cars .cars-textside {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.hsn-phonemain-apps-entry  .cars .cars-textside .apss-name {
+    position: relative;
+    color: white;
+    font-size: 70%;
+    float: left;
+    left: 25%;
+    top: 5%;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+
+.hsn-phonemain-apps-entry  .cars .cars-textside .download {
+    position: relative;
+    color: white;
+    opacity: 80%;
+    left: 25%;
+    top: 30%;
+    width: 50%;
+    height: 50%;
+}
+
+.hsn-phonemain-apps-entry   .cars .cars-textside .download i{
+    position: relative;
+    bottom:  80%;
+    left: 40%;
+}
+
+/* finance  */
+
+.hsn-phonemain-apps-entry  .finance {
+    position: relative;
+    left: 11%;
+    width: 80%;
+    height: 40%;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+.hsn-phonemain-apps-entry  .finance .finance-photoside {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url('https://m.economictimes.com/thumb/msid-82023536,width-1200,height-900,resizemode-4,imgsize-312033/crypto-currency.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;           
+}
+
+.hsn-phonemain-apps-entry  .finance .finance-photoside p {
+    position: relative;
+    color:white;
+    top: 3%;
+    left: 3%;
+    font-size: 80%;
+    opacity: 70%;
+}
+
+.hsn-phonemain-apps-entry  .finance .finance-photoside strong {
+    position: absolute; 
+    color:white;
+    margin-top: 3%;
+    left: 3%;
+    font-size: 70%;
+}
+
+.hsn-phonemain-apps-entry .finance .finance-textside {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.hsn-phonemain-apps-entry  .finance .finance-textside .apss-name {
+    position: relative;
+    color: white;
+    font-size: 70%;
+    float: left;
+    left: 25%;
+    top: 5%;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+
+.hsn-phonemain-apps-entry   .finance .finance-textside .download {
+    position: relative;
+    color: white;
+    opacity: 80%;
+    left: 25%;
+    top: 30%;
+    width: 50%;
+    height: 50%;
+}
+
+.hsn-phonemain-apps-entry  .finance .finance-textside .download i{
+    position: relative;
+    bottom:  80%;
+    left: 40%;
+}
+
+.download i {
+    transition: 0.6s color;
+}
+
+
+.download:hover i {
+    color: #8ac926;
+}
+
+/* twitter sayfası */
+.hsn-phonemain-twitter-entry {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: -100%;
+    
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+
+
+.twitter-app-registertext{
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    top: 20%;
+}
+
+.twitter-register-main #nameinput {
+    position: absolute;
+    top: 30%;
+    left: 17%;
+    border: none;
+    -webkit-appearance: none;                                                                               
+    outline: none;
+    background-color: rgb(0, 0, 0);
+}
+
+.twitter-register-main #numberinput {
+    position: absolute;
+    top: 40%;
+    left: 17%;
+    border: none;
+    -webkit-appearance: none; 
+    outline: none;
+    background-color: rgb(0, 0, 0);
+}
+
+
+.twitter-register-main #passwordinput {
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    border: none;
+    -webkit-appearance: none; 
+    outline: none;
+    background-color: rgb(0, 0, 0);
+}
+
+.line3 {
+    position: absolute;
+    font-family: 'Open Sans';
+    width: 68%;
+    left: 17%;
+    background-color: rgba(255, 255, 255, 0.679);
+    height: .1vh;
+    top: 54%;
+}
+.password-show {
+    position: absolute;
+    width: 10%;
+    height: 5%;
+    top: 50%;
+    left: 80%;
+}
+.password-show i {
+    color: white;
+    font-size: 70%;
+}
+
+
+.et {
+    position: absolute;
+    top: 40.5%;
+    left: 10%;
+    width: 10%;
+    height: 5%;
+    color: rgba(255, 255, 255, 0.767);
+    font-size: 70%;
+}
+.twitter-register-main .twitter-nextbutton {
+    position: absolute;
+    width: 50%;
+    height: 5%;
+    background-color: #0f66a0;
+    top: 60%;
+    border: none;
+    outline: none;
+    left: 27%;
+    border-radius: 7px;
+    color: white;
+}
+
+.twitter-login {
+    display: none;
+}
+
+.twitter-login #username {
+    position: absolute;
+    top: 30%;
+    left: 17%;
+    border: none;
+    -webkit-appearance: none;                                                                               
+    outline: none;
+    background-color: rgb(0, 0, 0);
+}
+
+.twitter-login .twitter-loginbutton {
+    position: absolute;
+    width: 50%;
+    height: 5%;
+    background-color: #0f66a0;
+    top: 60%;
+    border: none;
+    outline: none;
+    left: 27%;
+    border-radius: 7px;
+    color: white;
+}
+
+.twitter-login #login-passwordinput {
+    position: absolute;
+    top: 40%;
+    left: 17%;
+    border: none;
+    -webkit-appearance: none; 
+    outline: none;
+    background-color: rgb(0, 0, 0);
+}
+
+
+.twitter-register-confirm {
+    display: none;
+}
+
+.twitter-app-symbol {
+    position: absolute;
+    width: 10%;
+    height: 5%;
+    left: 47%;
+    top: 10%;
+}
+
+.twitter-app-symbol i{
+    position: relative;
+    color: #20a3f3;
+    left: 10%;
+}
+
+.twitter-register-confirm .twitter-register-confirm-head {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    top: 20%;
+}
+
+.twitter-register-confirm .twitter-register-confirm-head p {
+    color: white;
+    text-align: center;
+}
+
+.twitter-register-confirm .twitter-register-confirm-textside {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 30%;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.twitter-register-confirm .twitter-register-confirm-textside p {
+    color: rgba(255, 255, 255, 0.719);
+    text-align: center;
+    
+}
+
+.twitter-register-confirm .confirm {
+    position: absolute;
+    width: 50%;
+    height: 5%;
+    background-color: #0f66a0;
+    top: 50%;
+    border: none;
+    outline: none;
+    left: 27%;
+    border-radius: 7px;
+    color: white;
+}
+
+input, select, textarea{
+    color: rgba(255, 255, 255, 0.734);
+}
+
+.line {
+    position: absolute;
+    font-family: 'Open Sans';
+    width: 68%;
+    left: 17%;
+    background-color: rgba(255, 255, 255, 0.679);
+    height: .1vh;
+    top: 34%;
+    transition: 1s all ease-in-out;
+}
+
+.line2 {
+    position: absolute;
+    font-family: 'Open Sans';
+    width: 68%;
+    left: 17%;
+    background-color: rgba(255, 255, 255, 0.679);
+    height: .1vh;
+    top: 44%;
+    transition: 1s all ease-in-out;
+}
+
+.phonenotification-container {
+    display: none;
+    position: absolute;
+    width: 90%;
+    height: 10%;
+    border-radius: 15px;
+    background-color: #3d5a80;
+    left: -70%;
+    top: 85%;
+    
+}
+
+.phonenotification-container .phonenotification-iconside {
+    position: absolute;
+    width: 20%;
+    top: 15%;
+    left: 1%;
+    height: 70%;
+
+}
+
+.phonenotification-container .phonenotification-iconside i{
+    color: rgba(255, 255, 255, 0.829);
+    padding-left: 30%;
+    padding-top: 20%;
+
+}
+
+.phonenotification-container .phonenotification-textside {
+    position: absolute;
+    left: 15%;
+    width: 80%;
+    height: auto;
+    top: 20%;
+    
+    
+    
+}
+
+.commission {
+    position: absolute;
+    width: 60%;
+    height: 7%;
+    top: 90%;
+    left: 20%;
+    font-size: 70%;
+    text-align: center;
+    color: #ffe8d6;
+}
+
+.phonenotification-container .phonenotification-textside p{
+    color: white;
+    font-size: 70%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.twitter-app-registertext p{
+    text-align: center;
+    color: white;
+}
+
+/* settings sayfası */
+
+.hsn-phonemain-settings-entry {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: -100%;
+    height: 100%;
+    background-color: #141414;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+
+.s-plypoto{
+    position: absolute;
+    width: 40%;
+    height: 15%;
+    left: 10%;
+    top: 10%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+.s-plypoto:hover img{
+    opacity: 80%;
+}
+.s-cont {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    height: 40%;
+    top: 50%;
+    border-radius: 10px;
+    background-color: #ecf0f1;
+	display: none;
+}
+
+.s-plypoto img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: 10% 15%;
+    z-index: 1;
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
+
+.s-m-img{
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    left: 5%;
+    top: 5%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.phone-name {
+    position: absolute;
+    width: 30%;
+    height: 10%;
+    left: 5%;
+    top: 50%;
+    font-size: 70%;
+    text-align: center;
+    font-weight: 550;
+}
+
+.phone-version {
+    position: absolute;
+    width: 50%;
+    top: 5%;
+    left: 50%;
+    font-size: 80%;
+}
+
+.phone-totalapp {
+    position: absolute;
+    width: 50%;
+    top: 20%;
+    left: 50%;
+    font-size: 80%;
+    color: black;
+}
+
+.phone-serialnumber{
+    position: absolute;
+    width: 50%;
+    top: 35%;
+    left: 50%;
+    font-size: 80%;
+    color: black;
+}
+
+.s-playphoto-change{
+    position: inherit;
+    width: 50%;
+    height: 50%;
+    bottom: 5%;
+    background-color: red;
+    z-index: 99;
+}
+
+.s-m-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: 5% 5%; 
+}
+
+.s-pylname{
+    position: absolute;
+    width: 50%;
+    height: 5%;
+    top: 12%;
+    left: 50%;
+    color: white;
+    font-size: 80%;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: 0.4s color;
+}
+
+.s-pylname:hover {
+    color: rgb(223, 223, 223);
+}
+
+.s-phonenumber:hover {
+    color: rgb(223, 223, 223);
+}
+.s-phonenumber{
+    position: absolute;
+    width: 50%;
+    height: 5%;
+    top: 20%;
+    left: 50%;
+    color: white;
+    font-size: 90%;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: 0.4s color;
+}
+
+.s-settings-index-container {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    top: 30%;
+}
+
+.s-settings-index {
+    position: relative;
+    width: 80%;
+    height: 12%;
+    left: 10%;
+    background-color: #bdc3c7;
+    border-radius: 15px;
+    margin-top: 5%;
+    transition: 0.6s background-color;
+}
+.s-settings-index:hover {
+    background-color: #bac2d1;
+}
+
+.settings-pages-background {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #141414;
+    left: -100%;
+}
+
+.settings-pages-callsound {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #e6ccb2;
+    left: -100%;  
+}
+
+.settings-pages-notifications {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #e6ccb2;
+    left: -100%;  
+}
+
+.s-notifications-i{
+    position: relative;
+    top: 14%;
+    width: 80%;
+    height: 8%;
+    left: 10%;
+    margin-top: 2%;
+    background-color: red;
+    border-radius: 5px;
+}
+
+
+.s-cs-i{
+    position: relative;
+    top: 15%;
+    width: 80%;
+    height: 8%;
+    left: 10%;
+    margin-top: 2%;
+    background-color: #457b9d;
+    border-radius: 10px;
+    transition: 0.5s background-color;
+}
+
+.s-cs-i:hover {
+    background-color: #168aad;
+}
+
+.s-cs-i-icon {
+    position: absolute;
+    width: 10%;
+    height: 40%;
+    right: 5%;
+    top: 30%;
+
+}
+
+.s-cs-i-icon i {
+    color: #ff9f1c;
+    padding-top: 5%;
+}
+
+.s-cs-i-name {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    top: 40%;
+    text-align: center;
+    font-size: 80%;
+}
+
+.s-index-icon{
+    position: absolute;
+    width: 20%;
+    height: 80%;
+    left: 5%;
+    top: 12%;
+}
+
+.s-line {
+    position: absolute;
+    width: 100%;
+    height: .1vh;
+    background-color: white;
+    top: 27%;
+}
+.s-index-icon i {
+    color: black;
+    font-size: 90%;
+    padding: 25%;
+}
+
+.s-background-box {
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    left: 10%;
+    top: 15%;
+    margin-top: 5%;
+    border-radius: 0px;
+    background-color: #141414;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.s-background-box::-webkit-scrollbar {
+    width: 3px;
+    padding-right: 2%;
+}
+
+.s-background-photo{
+    position: relative;
+    width: 45%;
+    height: 40%;
+    margin-top: 2%;
+    margin-left: 3%;
+    float: left;
+    border-radius: 5px;
+    overflow-x: hidden;
+}
+
+.s-background-photo img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: 10% 15%;
+    opacity: 80%;
+    transition: 0.4s opacity;
+}
+.s-background-photo:hover img {
+    opacity: 100%;
+}
+
+
+.settings-pages-background p {
+    font-size: 60%;
+    padding-top: 30%;
+    padding-left: 10%;
+    color: #FFF;
+}
+
+
+.s-header{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    height: 8%;
+    font-size: 80%;
+    top: 10%;
+    transition: 0.4s color;
+    transition: 0.4s border-bottom;
+	color: #FFF;
+}
+
+
+
+.input-settings {
+    position: absolute;
+    width: 80%;
+    height: 5%;
+    bottom: 5%;
+    left: 10%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: black;
+}
+
+.input-settings:focus {
+    border-bottom: 2px solid #1da0f2b0;
+}
+
+.s-index-text{
+    position: absolute;
+    width: 50%;
+    height: 30%;
+    top: 37%;
+    left: 25%;
+    color: black;
+    font-size: 75%;
+    text-align: left;
+    font-weight: 400;
+    
+}
+
+
+
+.settings-checkbox {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    height: 7%;
+    background-color: rgba(140, 140, 135, 0.282);
+}
+
+
+input[type="checkbox"] {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    margin-top: 3%;
+    -webkit-appearance: none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    transition: .5s;
+    border: none;
+    left: 72%;
+    /* box-shadow: inset 0 0 5px rgba(0,0,0,.2); */
+}
+
+input:checked[type="checkbox"] {
+    background: #48af1f;
+}
+
+.checkbox-container .checkbox-text {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    top: 30%;
+    left: 15%;
+}
+
+.checkbox-container .checkbox-container-img {
+    position: absolute;
+    top: 16%;
+    left: 5%;
+    width:  25px;
+    height: 25px;
+    border-radius: 20%;
+    background-color: rgb(204, 142, 60);
+}
+
+.checkbox-container .checkbox-container-img i{
+    position: relative;
+    color: rgba(255, 255, 255, 0.816);
+    top: 14%;
+    left: 15%;
+}
+
+.checkbox-container .checkbox-text p {
+    text-align: center;
+    color: white;
+    font-size: 70%;
+}
+
+input[type="checkbox"]:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    background: #fff;
+   
+    transition: 300ms;
+    /* box-shadow: 0 2px 5px rgba(0,0,0,.2); */
+}
+input:checked[type="checkbox"]:before {
+    left: 22px;
+}
+
+.settings-background {
+    position: relative;
+    top: 12%;
+    width: 100%;
+    height: 7%;
+    background-color: rgba(140, 140, 135, 0.282);
+}
+
+.settings-background .background-container-img {
+    position: absolute;
+    top: 16%;
+    left: 5%;
+    width:  25px;
+    height: 25px;
+    border-radius: 20%;
+    background-color: rgb(204, 142, 60);
+}
+
+.settings-background .background-container-img i{
+    position: relative;
+    color: rgba(255, 255, 255, 0.816);
+    top: 14%;
+    left: 15%;
+}
+
+.settings-background .background-fasfa {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+    top: 25%;
+    outline: none;
+    border-radius: 10px;
+    transition: .5s;
+    border: none;
+    left: 79%;
+}
+
+.settings-background .background-fasfa i{
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.settings-background .background-text {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    top: 30%;
+    left: 15%;
+}
+
+
+.settings-background .background-text p{
+    text-align: center;
+    color: white;
+    font-size: 70%;
+}
+
+
+
+
+
+.settings-language {
+    position: relative;
+    top: 12%;
+    width: 100%;
+    height: 7%;
+    background-color: rgba(140, 140, 135, 0.282);
+}
+
+.settings-language .language-container-img {
+    position: absolute;
+    top: 16%;
+    left: 5%;
+    width:  25px;
+    height: 25px;
+    border-radius: 20%;
+    background-color: rgb(204, 142, 60);
+}
+
+.settings-language .language-container-img i{
+    position: relative;
+    color: rgba(255, 255, 255, 0.816);
+    top: 14%;
+    left: 15%;
+}
+
+.settings-language .language-fasfa {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+    top: 25%;
+    outline: none;
+    border-radius: 10px;
+    transition: .5s;
+    border: none;
+    left: 79%;
+}
+
+.settings-language .language-fasfa i{
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.settings-language .language-text {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    top: 30%;
+    left: 15%;
+}
+
+
+.settings-language .language-text p{
+    text-align: center;
+    color: white;
+    font-size: 70%;
+}
+
+
+
+
+/*  */
+
+.settings-language {
+    position: relative;
+    top: 14%;
+    width: 100%;
+    height: 7%;
+    background-color: rgba(140, 140, 135, 0.282);
+}
+
+.settings-language .settings-language-container-img {
+    position: absolute;
+    top: 16%;
+    left: 5%;
+    width:  25px;
+    height: 25px;
+    border-radius: 20%;
+    background-color: rgb(204, 142, 60);
+}
+
+.settings-language .settings-language-container-img i{
+    position: relative;
+    color: rgba(255, 255, 255, 0.816);
+    top: 14%;
+    left: 10%;
+}
+
+.settings-language-fasfa {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+    top: 20%;
+    outline: none;
+    border-radius: 10px;
+    transition: .5s;
+    border: none;
+    left: 79%;
+}
+
+.settings-language-fasfa i{
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.settings-language .settings-language-text {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    top: 30%;
+    left: 15%;
+}
+
+
+.settings-language .settings-language-text p{
+    text-align: center;
+    color: white;
+    font-size: 70%;
+}
+
+.photo-text {
+    display: none;
+    position: absolute;
+    width: 0;
+    height: 25%;
+    top: 40%;
+    left: 10%;
+    border-radius: 8%;
+    background-color: #c8354e;
+    transition: width 300ms;
+}
+
+.photo-text .photo-text-textcontainer{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    top: 3%;
+}
+
+.photo-text .photo-text-textcontainer p{
+    color: white;
+    text-align: center;
+    font-size: 80%;
+}
+
+.photo-text .text-bar {
+    position: relative;
+    outline: none;
+    left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    height: 25%;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.photo-text .photo-text-yes {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 80%;
+    margin-left: 25%;
+}
+.photo-text .photo-text-exit {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 80%;
+    margin-left: 70%;
+}
+
+.photo-text .photo-text-exit i{
+    color: white;
+}
+
+.photo-text .photo-text-yes i{
+    color: white;
+}
+
+.photo-text2 {
+    display: none;
+    position: absolute;
+    width: 0;
+    height: 25%;
+    top: 40%;
+    left: 10%;
+    border-radius: 8%;
+    background-color: #c8354e;
+    transition: width 300ms;
+}
+
+.photo-text2 .photo-text2-textcontainer{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    top: 3%;
+}
+
+.photo-text2 .photo-text2-textcontainer p{
+    color: white;
+    text-align: center;
+    font-size: 80%;
+}
+
+.photo-text2 .text-bar2 {
+    position: relative;
+    outline: none;
+    left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    height: 25%;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.photo-text2 .photo-text2-yes {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 80%;
+    margin-left: 25%;
+}
+.photo-text2 .photo-text2-exit {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 80%;
+    margin-left: 70%;
+}
+
+.photo-text2 .photo-text2-exit i{
+    color: white;
+}
+
+.photo-text2 .photo-text2-yes i{
+    color: white;
+}
+
+/* back button*/
+.goback {
+    position: absolute;
+    top: 7%;
+    width: 5%;
+    left: 90%;
+    height: 3%;
+	color: white;
+}
+
+.goback i{
+    color: white;
+    font-size: 80%;
+}
+
+
+/* Keyframes */
+@keyframes shake {
+    0%{
+        transform: translate(0);
+    }
+    20%,
+    40%,
+    60%,
+    80%{
+        transform: translate(.4em);
+        box-shadow: 0px;
+    }
+
+    10%,
+    30%,
+    50%{
+        transform: translate(-.2em);
+    }
+    70%,
+    100%{
+        transform: translate(0);
+    }
+
+}
+
+
+.hsn-phone-changephotocontainer {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    left: -100%;
+    height: 90%;
+    background-color: rgb(201, 162, 61);
+    border-bottom-left-radius: 6%;
+    border-bottom-right-radius: 6%;
+}
+
+.hsn-phone-changephotocontainer #changephoto-textarea
+{
+    position: absolute;
+    border: none;
+    height: 15vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color: rgb(233, 233, 233);
+    outline: none;
+    border-left: 2px solid #1da0f200;
+    resize: none;
+    transition: all 0.1s ease-in-out;
+    font-family: 'Heebo', sans-serif;
+    padding: 0.87vh;
+    font-size: 1.4vh;
+    border-radius: 5px;
+    top: 12%;
+    width: 22vh;
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: inset 0 0 2vh 0 rgba(0, 0, 0, 0.089);
+}
+
+
+.hsn-phone-changephotocontainer .hsn-phone-changephotocontainer-icons {
+    position: relative;
+    width: 10%;
+    height: 5%;
+    margin-left: 20%;
+    float: left;
+    left: 9%;
+    top: 45%;
+}
+
+.hsn-phone-changephotocontainer .hsn-phone-changephotocontainer-icons i {
+    padding-left: 15%;
+    padding-top: 5%;
+}
+
+
+.hsn-phonemain-closephone {
+    position: absolute;
+    width: 60%;
+    height: 2%;
+    left: 20%;
+    border-radius: 15px;
+    background-color: rgb(214, 214, 214);
+    bottom: 3%;
+    transition: all 1s;
+}
+
+
+
+.hsn-phonemain-notes-entry {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    background-color: #141414;
+}
+
+.notes-topcontainer{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-color: #181818;
+    
+}
+
+
+.notes-bottomcontainer{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 30%;
+    
+    overflow-x: hidden;
+}
+
+.notes-selectfromgallery {
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    right: 4%;
+    top: 63%;
+    
+}
+
+.notes-selectfromgallery i {
+    color: rgb(228, 228, 228);
+    transition: color 0.4s;
+}
+.notes-selectfromgallery:hover i {
+    color: #06d6a0;
+}
+
+
+
+.notes-bottomcontainer-2 {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 30%;
+    
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar
+{
+	width: 0;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: rgba(0, 0, 0, 0.705);
+}
+
+
+
+
+.myNotes {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    height: auto;
+    min-height: 10%;
+    background-color: #181818;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+.notes-totalnotes {
+    position: absolute;
+    width: 30%;
+    height: 10%;
+    top: 40%;
+    font-size: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fec89a;
+    text-align: center;
+    left:35%;
+    transition: 0.6s color;
+   
+}
+
+.myNotes-title{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    color: #cad2c5;
+    font-size: 70%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.myNotes-time {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    font-size: 60%;
+    text-align: right;
+    padding-bottom: 4%;
+    color: #cad2c5;
+}
+
+.myNotes-photo{
+    position: relative;
+    width: 80%;
+    height: 30%;
+    left: 10%; 
+    overflow: hidden;
+    margin-top: 5%;
+}
+
+.myNotes-photo {
+    opacity: 40%;
+    transition: 0.6s opacity;
+}
+
+.myNotes-photo:hover {
+    opacity: 100%;
+}
+
+.newNotee{
+    position: absolute;
+    width: 10%;
+    height: 5%;
+    bottom: 2%;
+    left: 47%;
+    
+}
+
+.newNotee i{
+    font-size: 110%;
+    padding-left: 30%;
+    color: #227c9d;
+    transition: 0.6s color;
+}
+.newNotee:hover i {
+    color: #79addc;
+}
+
+#notes-title {
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    left: 10%;
+    top: 20%;
+    border: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    resize: none;
+    color: black;
+    outline: none;
+    font-family: Monthserrat;
+}
+
+#notes-text {
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    left: 10%;
+    top: 30%;
+    border: none;
+    /* border-top-right-radius: 10px;
+    border-top-left-radius: 10px; */
+    resize: none;
+    outline: none;
+    color: black;
+    font-family: Monthserrat;
+}
+
+#notes-photo {
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    left: 10%;
+    top: 60%;
+    border: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    resize: none;
+    color: black;
+    outline: none;
+    font-family: Monthserrat;
+}
+
+.sendNote {
+    position: absolute;
+    width: 10%;
+    height: 5%;
+    left: 45%;
+    top: 80%;
+    
+}
+.sendNote i{
+    padding-left: 20%;
+    color: #06d6a0;
+    transition: 0.6s color;
+}
+
+.sendNote:hover i {
+    color: #0081a7;
+}
+.notes-nonenotify{
+    display: none;
+    position: absolute;
+    width: 80%;
+    left: -90%;
+    height: 20%;
+    top: 37%;
+    font-size: 70%;
+    color: #cad2c5;
+    text-align: center;
+}
+
+.myNotes-delete{
+    position: relative;
+    width: 5%;
+    height: 5%;
+    left: 90%;
+}
+
+.myNotes-delete:hover i{
+    color: #9b2226;
+}
+
+.myNotes-delete i {
+   color: #a5a9a3;
+    font-size: 80%;
+    padding-top: 10%;
+    transition: 0.6s color; 
+    
+}
+
+
+
+.myNotes-photo img {
+    padding: 0;
+    max-height: 100%;
+    min-width: 100%;
+}
+
+
+.myNotes-textside{
+    position: relative;
+    margin-top: 2%;
+    width: 80%;
+    height: auto;
+    padding-top: 5%;
+    left: 10%;
+    font-size: 60%;
+    color: #cad2c5;
+
+    padding-bottom: 7%;
+}
+
+
+
+.notes-totalnotes:hover {
+    color: #ed976a;
+}
+
+.notes-totalnotes-index {
+    position: absolute;
+    width: 30%;
+    height: 10%;
+    top: 50%;
+    font-size: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #e9ecef;
+    text-align: center;
+    left:35%;
+}
+
+.notes-reminder {
+    position: absolute;
+    width: 30%;
+    height: 10%;
+    top: 40%;
+    font-size: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fec89a;
+    text-align: center;
+    left: 65%;
+    transition: 0.6s color;
+   
+}
+
+
+.notes-reminder:hover {
+    color: #ed976a;
+}
+
+.notes-reminder-index {
+    position: absolute;
+    width: 30%;
+    height: 10%;
+    top: 50%;
+    font-size: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #e9ecef;
+    text-align: center;
+    left: 65%;
+}
+
+.hsn-phonemain-notes-entry .hsn-phonemain-notes-entry-noteContainer {
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    top: 15%;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.hsn-phonemain-notes-entry .hsn-phonemain-notes-entry-addNote {
+    position: absolute;
+    top: 92%;
+    width: 8%;
+    height: 5%;
+    left: 80%;
+}
+
+
+
+.hsn-phonemain-notes-entry .hsn-phonemain-notes-entry-addNote i{
+    color: white;
+    padding-top: 30%;
+}
+
+.hsn-phonemain-notes-entry .hsn-phonemain-notes-entry-totalNotes {
+    position: absolute;
+    top: 92%;
+    width: 40%;
+    height: 5%;
+    
+    color: white;
+    overflow: hidden;
+    font-size: 50%;
+    padding-top: 4%;
+    text-align: center;
+    text-overflow: ellipsis;
+   
+    left: 25%;
+}
+
+
+.noteContainer-notes {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    height: 10%;
+    border-radius: 15px;
+    margin-top: 3%;
+}
+
+.noteContainer-notes:hover {
+    border-bottom: .1vh solid #f4acb7;
+}
+
+.noteContainer-notes .notes-title {
+    position: absolute;
+    width: 40%;
+    height: 25%;
+    left: 30%;
+    text-align: center;
+    color: white;
+    font-size: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}
+
+
+
+.notes-time {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    left: 70%;
+    bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+    font-size: 50%;
+    color: rgba(255, 255, 255, 0.645);
+    white-space:nowrap;
+    
+}
+
+
+.hsn-phonemain-shownote {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 8%;
+    background-color: #3c6e71;
+}
+
+.hsn-phonemain-shownote .note-title {
+    position: absolute;
+    width: 70%;
+    height: 4%;
+    left: 10%;
+    top: 15%;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 80%;
+    border-bottom: .1vh solid rgb(255, 255, 255);
+}
+
+.shownote {
+    position: absolute;
+    top: -90%;
+    width: 100%;
+    height: 100%;
+}
+
+.note-bottomcontainer-icons  {
+    position: relative;
+    float: left;
+    width: 10%;
+    height: 5%;
+    margin-left: 20%;
+    left: 10%;
+    top: 90%;
+}
+
+.notes-message {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    height: 35%;
+    top: 25%;
+    /* background-color: red; */
+    color: white;
+    white-space: inherit;
+    overflow: hidden;
+    font-size: 80%;
+}
+
+.notes-photo {
+    position: absolute; 
+    width: 80%;
+    left: 10%;
+    height: 20%;
+    top: 65%;
+}
+
+.notes-photo img {
+    padding: 0;
+    max-height: 100%;
+    min-width: 100%;
+}
+
+.note-bottomcontainer-icons i {
+    color: rgb(216, 216, 216);
+    padding-left: 20%;
+}
+
+
+.hsn-phonemain-notes-addNewNote{
+    display: none;
+    position: absolute;
+    top: 1%;
+    width: 100%;
+    height: 99%;
+    background-color: #3c6e71;
+    border-radius: 3%;
+}
+
+.notes-addnewnote-title {
+    position: absolute;
+    width: 70%;
+    height: 4%;
+    top: 10%;
+    left: 15%;
+    font-size: 70%;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 8%;
+    border-bottom: .1vh solid white;
+}
+
+
+
+#notes-titlecontainer {
+    position: absolute;
+    border: none;
+    height: 5%;
+    margin: 0 auto;  
+    left: 15%;
+    background-color: rgb(233, 233, 233);
+    outline: none;
+    resize: none;
+    transition: all 0.1s ease-in-out;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.4vh;
+    top: 20%;
+    width: 70%;
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: inset 0 0 2vh 0 rgba(0, 0, 0, 0.089);
+}
+
+#notes-textcontainer {
+    position: absolute;
+    border: none;
+    height: 15vh;
+    margin: 0 auto;  
+    left: 15%;
+    background-color: rgb(233, 233, 233);
+    outline: none;
+    resize: none;
+    transition: all 0.1s ease-in-out;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.4vh;
+    top: 25%;
+    width: 70%;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: inset 0 0 2vh 0 rgba(0, 0, 0, 0.089);
+}
+
+.addnewNote-icon {
+    position: relative;
+    width: 10%;
+    height: 5%;
+    top: 53%;
+    left: 20%;
+    margin-left: 15%;
+    float: left;
+}
+
+
+.addnewNote-icon i {
+    color: green;
+    padding-left: 7%;
+    padding-top: 5%;
+}
+
+.addnewNote-icon[id="gallery"] i{
+    color: white;
+}
+
+
+.hsn-phonemain-contacts-entry {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: -100%;
+    height: 100%;
+    background-color: rgb(196, 196, 196);
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+
+.hsn-phonemain-contacts-entry p {
+    color: #180332;
+    font-size: 120%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-weight: 800;
+}
+
+
+.contacts-none {
+    display: none;
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    left: 10%;
+    color: #180332;
+    font-size: 80%;
+    text-align: center;
+    top: 30%;
+}
+.addnewcontact{
+    position: absolute;
+    width:20%;
+    height: 3%;
+    top: 14.5%;
+    left: 70%;
+    text-align: center;
+    font-size: 70%;
+    padding-top: 2%;
+    border-radius: 8px;
+    background: #457b9d;
+    color: white;
+    transition: background 0.4s;
+}
+
+.addnewcontact:hover {
+    background: #3b637c;
+}
+
+.contacts-keyboard {
+    position: absolute;
+    width:20%;
+    height: 3%;
+    top: 14.5%;
+    left: 48%;
+    text-align: center;
+    font-size: 90%;
+    padding-top: 2%;
+    border-radius: 8px;
+    background: #457b9d;
+    color: white;
+    transition: background 0.4s;
+}
+
+.contacts-keyboard:hover {
+    background: #3b637c;
+}
+
+.number-index {
+    position: absolute;
+    width: 5%;
+    right: 4%;
+    
+    height: 70%;
+    top: 25%;
+    font-size: 60%;
+}
+
+.number-index .numbers {
+    position: relative;
+    margin-top: 30%;
+    font-size: 110%;
+    color: #457b9d;
+    text-align: center;
+}
+
+
+.contact {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    border-radius: 15px;
+}
+
+.contact:hover {
+    background-color: #a5a5a5;
+}
+
+.contact-photo {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 5%;
+    left: 2%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.contact-photo img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: 10% 15%;
+}
+
+.contact-name{
+    position: absolute;
+    width: 60%;
+    left: 35%;
+    top: 30%;
+    height: 20%;
+    color: black;
+    font-size: 70%;
+    font-weight: 550;
+    
+}
+
+.contact-phonenumber {
+    position: absolute;
+    width: 60%;
+    left: 35%;
+    top: 55%;
+    height: 20%;
+    color: rgb(55, 55, 55);
+    font-size: 60%;
+    font-weight: 400;
+    
+}
+
+.showcontact-plyphoto {
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    border-radius: 15px;
+    left: 30%;
+    top: 10%;
+    overflow: hidden;
+
+}
+
+.showcontact-plyphoto img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: 10% 15%;
+}
+
+.showcontact-plyname {
+    position: absolute;
+    width: 40%;
+    height: 5%;
+    left: 30%;
+    top: 30%;
+    font-size: 90%;
+    text-align: center;
+    padding-top: 5%;
+    font-weight:550;
+}
+
+
+.showcontact-number {
+    position: absolute;
+    width: 40%;
+    height: 5%;
+    left: 30%;
+    top: 35%;
+    font-size: 65%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+.contact-showcontact-bottomside{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    -moz-box-shadow:    inset 0 0 10px rgb(213, 213, 213);
+   -webkit-box-shadow: inset 0 0 10px rgb(213, 213, 213);
+   box-shadow:         inset 0 0 10px rgb(213, 213, 213);
+}
+
+
+
+.showcontact-index {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #1cac42;
+    float: left;
+    margin-top: 90%;
+    margin-left: 10%;
+    left: 20%;
+    transition: background 0.4s;
+}
+
+.showcontact-index[id="call"]:hover {
+    background: #1cbf47;
+}
+
+
+
+
+
+.showcontact-index i {
+    color: white;
+    padding: 30%;
+}
+
+.bottomside-settings{
+    position: relative;
+    width: 100%;
+    height: 15%;
+    margin-top: 5%;
+    
+}
+
+.settings-header {
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    left: 5%;
+    top: 30%;
+    text-align: left;
+    
+    font-size: 75%;
+    padding-top: 1%;
+}
+
+.bottomside-settings-iconside{
+    position: absolute;
+    width: 10%;
+    height: 40%;
+    left: 85%;
+    top: 25%;
+    text-align: left;
+    transition: all 1s;
+    padding-top: 1%;
+}
+
+.bottomside-settings-iconside i{
+    padding-left: 8%;
+    transition: all 0.6s;
+}
+
+.bottomside-settings-iconside:hover i{
+    color: #1cac42;
+}
+
+.bottomside-settings-iconside[id="delete"]:hover i{
+    color: red;
+}
+
+.newcontact-inputs {
+    position: relative;
+    width: 80%;
+    margin-top: 10%;
+    border-radius: 20px;
+    top: 20%;
+    height: 8%;
+    left: 10%;
+    border: none;
+    
+    outline: none;
+    color: black;
+    padding-left: 5%;
+}
+.newcontact-inputs::placeholder {
+    color: black;
+}
+
+.newcontact-submit {
+    position: absolute;
+    width: 40%;
+    height: 5%;
+    left: 30%;
+    top: 60%;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background: #a22b3f;
+    color: #fff;
+}
+
+.hsn-phonemain-gallery-entry-select {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: -100%;
+    height: 90%;
+    background-color: #e5e5e5;
+    overflow-x: hidden;
+    overflow-y: visible;
+    z-index: 101;
+}
+
+.close-galleryselect {
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    right: 1%;
+    top: 3%;
+    
+}
+
+.close-galleryselect i {
+    color: #fff;
+    transition: color 0.4s;
+    padding-left: 20%;
+
+}
+
+.close-galleryselect:hover i {
+    color: #d62828;
+}
+
+
+
+.hsn-phonemain-gallery-entry {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: -100%;
+    height: 100%;
+    background-color: #e5e5e5;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+
+.gallery-photos {
+    position: relative;
+    width: 80%;
+    height: 30%;
+    left: 10%;
+    margin-top: 5%;
+    top: 1%;
+    float: left;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.gallery-topside {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background-color: #023047;
+}
+
+.gallery-bottomside {
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    top: 20%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+  
+  .gallery-bottomside::-webkit-scrollbar {
+    width: 3px;
+    padding-right: 2%;
+  }
+  
+
+
+.gallery-topsidemessage {
+    position: absolute;
+    width: 80%;
+    height: 20%;
+    top: 50%;
+    left: 20%;
+    font-size: 70%;
+    text-align: left;
+    color: #dddcdc;
+    padding-top: 2%;
+}
+
+.gallery-nonenotify{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    top: 25%;
+    left: -90%;
+    font-size: 80%;
+}
+
+.gallery-photos-select {
+    position: relative;
+    width: 80%;
+    height: 30%;
+    left: 10%;
+    margin-top: 3%;
+    top: 2%;
+    float: left;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.gallery-photos-select img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: 10% 15%;
+}
+
+
+
+
+
+.gallery-photos img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: 10% 15%;
+    opacity: 90%;
+    transition: 0.5s opacity;
+}
+
+.gallery-photos:hover img {
+    opacity: 100%;
+}
+
+.gallery-topsideinfoicon {
+    position: absolute;
+    width: 15%;
+    height: 20%;
+    top: 50%;
+    left: 10%;
+   
+}
+.gallery-topsideinfoicon i{
+    color: #9d0208;
+    padding-left: 2%;
+    padding-top: 2%;
+    font-size: 120%;
+}
+
+
+
+
+.save-icon {
+    position: relative;
+    width: 10%;
+    height: 100%;
+    left: 45%;
+   
+}
+
+
+.save-icon i {
+    color: white;
+    padding-top: 2%;
+    padding-left: 40%;
+}
+
+
+.hsn-phonemain-mail-entry {
+    overflow-x: hidden;
+    overflow-y: visible; 
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    background-color: #c8c7c8;
+}
+
+.mail-showmail{
+    position: absolute;
+    display: none;
+    border-radius: 8%;
+    width: 100%;
+    height: 100%;
+    top: 0.1%;
+    background-color: #c8c7c8;
+    
+}
+
+.mail-fromSrc{
+    position: absolute;
+    width: 80%;
+    height: 3%;
+    left: 10%;
+    color: rgb(31, 30, 30);
+    font-size: 60%;
+    top: 20%;
+    text-align: center;
+}
+
+
+.mail-fromText {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    height: 30%;
+    top: 30%;
+    font-size: 70%;
+    padding-top: 3%;
+    padding-left: 3%;
+    overflow: hidden;
+    border-radius: 1%;
+    color: rgb(31, 30, 30);
+    -moz-box-shadow:    inset 0 0 5px #000000;
+    -webkit-box-shadow: inset 0 0 5px #000000;
+    box-shadow:         inset 0 0 5px #000000;
+
+}
+
+#mail-delete {
+    position: absolute;
+    border: none;
+    background-color: none;
+    background: none;
+    width: 20%;
+    height: 7%;
+    left: 40%;
+    font-size: 65%;
+    top: 65%;
+    padding-top: 2%;
+    outline: none;
+    transition: border-bottom 1s ease-in-out;
+}
+#mail-delete:hover {
+   border-bottom: .1vh solid rgb(145, 41, 41); 
+}
+
+
+.mail-welcomeside {
+    position: absolute;
+    width: 90%;
+    height: 5%;
+    left: 10%;
+    top: 15%;
+    font-weight: 700;
+    font-size: 70%;
+    
+}
+
+.mail-accountside {
+    position: absolute;
+    width: 90%;
+    height: 5%;
+    left: 10%;
+    top: 20%;
+    color: rgb(48, 48, 48);
+    font-size: 55%;
+    
+}
+
+.mail-mailside {
+    position: absolute;
+    
+    width: 100%;
+    height: 60%;
+    top: 25%;
+    overflow-x: hidden;
+    overflow-y: visible; 
+}
+
+.mail-mails {
+    position: relative;
+    width: 90%;
+    left: 10%;
+    height: 20%;
+    border-bottom: .1vh solid rgb(87, 87, 87);
+    transition: border-bottom 0.5s;
+    
+}
+
+.mail-mails:hover {
+    border-bottom: .1vh solid rgb(192, 60, 60);
+}
+
+.mail-mails-appname {
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    
+    top: 1%;
+    color: rgb(36, 36, 36);
+    font-size: 70%;
+    padding-top: 3%;
+}
+
+.mail-mails-message {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    top: 45%;
+    color: rgb(48, 48, 48);
+    font-size: 50%;
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.mail-mails-time {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    bottom: 0;
+    right: 0;
+    font-size: 50%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.mails-nonenotify {
+    display: none;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    height: 5%;
+    top: 30%;
+    border-radius: 10px;
+    color: rgb(48, 48, 48);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 80%;
+    text-align: center;
+    padding-top: 5%;
+    
+}
+
+
+
+.hsn-phonemain-tiktok-entry{
+    overflow-x: hidden;
+    overflow-y: visible; 
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 8%;
+    background-color: black;
+}
+
+.tiktok-page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0.5%;
+    background: black;
+    left: 30%;
+}
+
+.hsn-phonemain-state-entry {
+    overflow-x: hidden;
+    overflow-y: visible; 
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    background-color: rgb(196, 196, 196);
+}
+
+.state-city-text {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    height: 4%;
+    top: 15%;
+    color: black;
+    font-size: 90%;
+    text-align: center;
+}
+
+.state-jobs-name {
+    position: relative;
+    top: 92%;
+    width: 18.5%;
+    height: 4%;
+    margin-left: 5%;
+    float: left;
+    color: black;
+    font-size: 50%;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 100%;
+}
+
+
+.state-jobs-container {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 25%;
+    background-color: rgb(206, 206, 206);
+    border-radius: 3%;
+    overflow-x: hidden;
+    overflow-y: visible; 
+}
+
+.state-jobs-container::-webkit-scrollbar {
+    width: 3px;
+    padding-right: 2%;
+  }
+
+.state-jobs-container-index {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    margin-top: 2%;
+    top: 0;
+    height: 15%;
+    border-radius: 10px;
+    background-color: rgb(20, 127, 165);
+
+}
+
+.state-jobs-container-index-name {
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    top: 30%;
+    font-size: 90%;
+    padding-left: 2%;
+    padding-top: 2%;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.state-active-jobs {
+    position: absolute;
+    width: 90%;
+    height: 10%;
+    top: 22%;
+    left: 5%;
+    color: black;
+    font-size: 70%;
+}
+
+.state-jobs-container-index-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 10%;
+    
+    border-radius: 20px;
+    left: 80%;
+}
+
+.state-jobs-container-index-icon i {
+    color: #9cd2f7;
+    font-size: 160%;
+    padding-left: 15%;
+    padding-top: 15%;
+    transition: color 0.5s;
+}
+
+.state-jobs-container-index-icon:hover i {
+    color: #63a7d5;
+}
+
+.state-nonenotify {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 30%;
+    height: 9%;
+    border-radius: 10px;
+    
+    color: black;
+    text-align: center;
+    z-index: 99;
+    
+}
+
+.fadeInOut {
+    animation: inout 2s infinite;
+}
+
+.hsn-phonemain-cars-entry {
+    overflow-x: hidden;
+    overflow-y: visible; 
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    background-color: #141414;
+}
+
+
+
+
+.hsn-phonemain-finance-entry {
+    display: none;
+    position: absolute;
+    width: 100%;
+    
+    height: 100%;
+    top: -100%;
+    background-color: #ffe8d6;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.finance-topside {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-color: #1d3557;
+}
+
+
+.finance-buy-side {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+
+.finance-buyside-input {
+    position: relative;
+    width: 50%;
+    height: 15%;
+    left: 25%;
+    top: 30%;
+    margin-top: 2%;
+    border: none;
+    outline: none;
+    color: black;
+    background: white;
+    border-radius: 10px;
+    padding-left: 5%;
+}
+
+.finance-buyside-icons {
+    position: relative;
+    width: 50%;
+    height: 15%;
+    left: 25%;
+    top: 35%;
+   
+    border-radius: 3px;
+}
+.finance-buyside-icons-index {
+    position: relative;
+    width: 20%;
+    height: 80%;
+    margin-left: 4%;
+    float: left;
+    top: 10%;
+    
+}
+
+.finance-buyside-icons-index i{
+    color: white;
+    font-size: 120%;
+    padding-left: 15%;
+}
+
+.selectedcrypto i{
+    color: #06d6a0;
+}
+
+.buyside-newTransaction {
+    position: absolute;
+    width: 20%;
+    height: 15%;
+    left: 76%;
+    top: 45%;
+    outline: none;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 80%;
+    transition: 0.6s all;
+
+}
+
+
+.crypto-boxs {
+    top: 10%;
+    position: relative;
+    width: 90%;
+    height: 17%;
+    margin-top: 5%;
+    left: 5%;
+    background-color: #1d3557;
+    border-radius: 5px;
+    
+}
+
+.crypto-boxs-buy {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.crypto-boxs-sell{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.crypto-iconnn{
+    position: absolute;
+    width: 15%;
+    height: 50%;
+    left: 5%;
+    top: 30%;
+    
+}
+
+
+.crypto-iconnn i {
+    color: rgb(213, 213, 213);
+    padding-left: 25%;
+    font-size: 130%;
+    padding-top: 10%;
+    transition: 0.2s color;
+}
+.crypto-iconnn:hover i {
+    color: #118ab2;
+}
+
+
+
+.crypto-boxs p{
+    color: white;
+    text-align: center;
+    padding-top: 3%;
+    font-size: 70%;
+    
+}
+
+.crypto-input-{
+    position: absolute;
+    width: 40%;
+    left: 30%;
+    top: 40%;
+    outline: none;
+    background: white;
+    border-radius: 5px;
+    color: black;
+    border: none;
+    font-family: Monthserrat;
+    padding-left: 2%;
+}
+
+.rotate {
+    position: absolute;
+    width: 10%;
+    height: 30%;
+    right: 5%;
+    top: 40%;
+    
+}
+
+.rotate2 {
+    position: absolute;
+    width: 10%;
+    height: 30%;
+    right: 5%;
+    top: 40%;
+    
+}
+
+.rotate2 i{
+    color: rgb(213, 213, 213);
+    padding-left: 10%;
+    
+}
+
+.rotate i{
+    color: rgb(213, 213, 213);
+    padding-left: 10%;
+}
+
+
+.buyside-newTransaction:hover {
+    background: #06d6a0;
+    color: white;
+}
+
+
+
+
+.finance-plyname {
+    position: absolute;
+    width: 40%;
+    left: 5%;
+    top: 25%;
+    height: 10%;
+    
+    font-size: 80%;
+    color: #ffe8d6;
+}
+
+
+
+
+.finance-cryptoid {
+    position: absolute;
+    width: 40%;
+    right: 5%;
+    top: 25%;
+    height: 10%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 70%;
+    text-align: right;
+    color: #ffe8d6;
+    
+}
+
+.finance-totalbalance {
+    position: absolute;
+    width: 50%;
+    height: 10%;
+    top: 50%;
+    left: 5%;
+    font-size: 70%;
+    color: rgba(255, 255, 255, 0.576);
+}
+
+.finance-totalbalance-index {
+    position: absolute;
+    width: 50%;
+    height: 10%;
+    top: 60%;
+    left: 5%;
+    font-size: 90%;
+    color: white;
+}
+
+.cryptocurrency-side {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    top: 24%;
+    
+}
+
+.cryptocurrency-side-index {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    height: 15%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px -1px black;
+    margin-top: 2%;
+}
+
+.cryptocurrency-side-icon {
+    position: absolute;
+    width: 20%;
+    height: 80%;
+    top: 10%;
+    left: 5%;
+    
+}
+
+.cryptocurrency-side-icon i {
+    color: #1d3557;
+    font-size: 150%;
+    padding: 25%;
+}
+
+.cryptocurrency-side-label {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    height: 40%;
+    top: 40%;
+   
+    font-size: 80%;
+}
+
+.cryptocurrency-decrease {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 25%;
+    right: 10%;
+    border-radius: 5px;
+    background-color: #9e2a2b;
+    color: white;
+    font-size: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: background-color 0.4s;
+}
+
+.cryptocurrency-decrease:hover{
+    background-color: #b62d2f;
+}
+
+.cryptocurrency-decrease p {
+    color: white;
+    font-size: 120%;
+    padding-top: 15%;
+    text-align: center;
+    font-size: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.cryptocurrency-decrease-icon {
+    position: absolute;
+    height: 50%;
+    width: 5%;
+    right: 4%;
+    top: 25%;
+    
+}
+
+.finance-transactions-container {
+    position: absolute;
+    width: 80%;
+    left:  10%;
+    height: 15%;
+    top: 75%;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+
+.finance-transactions-container-index {
+    position: relative;
+    width: 90%;
+    height: 70%;
+    left: 5%;
+    margin-top: 5%;
+    background-color: #1d3557;
+    border-radius: 10px;
+    transition: 0.5s background-color;
+}
+
+.finance-transactions-container-index:hover {
+    background-color: #1e6091; 
+}
+
+.finance-transactions-container-index-icon {
+    position: absolute;
+    width: 20%;
+    height: 60%;
+    left: 5%;
+    top: 20%;
+    
+}
+
+.finance-transactions-none{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    margin-top: 5%;
+    color: #1d3557;
+    font-size: 70%;
+}
+
+.finance-buybutton{
+    position: absolute;
+    bottom:4%;
+    width: 30%;
+    left: 35%;
+    background-color: #1d3557;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    height: 4%;
+    border-radius: 5px;
+    transition: 0.5s background-color;
+}
+
+.finance-buybutton:hover {
+    background-color: #1e6091; 
+}
+
+
+
+.finance-transactions-container-index-icon i {
+    font-size: 120%;
+    padding: 20% 30%;
+    color: #fff;
+}
+
+
+.finance-transactions-container-index-label {
+    position: relative;
+    left: 20%;
+    width: 37%;
+    height: 20%;
+    
+    margin-left: 2%;
+    top: 20%;
+    float: left;
+    color:  #fff;
+    font-size: 60%;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.finance-transactions-container-index-text{
+    position: relative;
+    left: 20%;
+    width: 37%;
+    height: 20%;
+    
+    margin-left: 2%;
+    top: 40%;
+    float: left;
+    color:  rgb(179, 179, 179);
+    font-size: 60%;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+.increase {
+    background-color: #06d6a0;
+}
+
+.decrease {
+    background-color: #e5383b;
+}
+
+.hsn-phonemain-gambling-entry {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 1%;
+    border-radius: 8%;
+    height: 100%;
+    background-color: #26262c;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+
+.gambling-autoscene {
+    display: none;
+    position: relative;
+    width: 100%;
+    top: 1%;
+    border-radius: 8%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+    z-index: 99;
+}
+
+.gambling-autoscene .autoscene-icon {
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    
+    left: 40%;
+    top: 30%;
+    animation: dondur 2s infinite;
+}
+.gambling-autoscene .autoscene-icon i {
+    color: #a7a7a7;
+    font-size: 180%;
+    padding-left: 25%;
+    padding-top: 25%;
+}
+
+.gambling-autoscene .autoscene-text {
+    position: absolute;
+    width: 80%;
+    height: 5%;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 70%;
+    left: 10%;
+    top: 45%;
+    color:  #a7a7a7;;
+    animation: inout 2s infinite;
+
+}
+
+
+@keyframes dondur{
+    50%{transform: rotateY(180deg);}
+    to{transform: rotateY(360deg);}
+}
+
+@keyframes inout {
+    from {opacity: 0;}
+      to {opacity: 1;}
+}
+
+
+.gambling-register {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 10%;
+    z-index: 1;
+    display: none;
+}
+
+.gambling-login {
+    display: none;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    height: 80%;
+    top: 10%;
+    
+}
+
+#gambling-header-text {
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    left: 10%;
+    top: 10%;
+    text-align: center;
+    color: #c0c0bb;
+}
+
+
+#gambling-inputs {
+    position: relative;
+    width: 80%;
+    height: 7%;
+    left: 10%;
+    margin-top: 10%;
+    top: 20%;
+    border: none;
+    outline: none;
+    resize: none;
+    transition: all 0.1s ease-in-out;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.4vh;
+    background: #202026;
+    color: #c0c0bb;
+    box-shadow: inset 0 0 2vh 0 rgba(0, 0, 0, 0.089);
+}
+
+.gambling-send{
+    position: absolute;
+    width: 50%;
+    height: 7%;
+    left: 25%;
+    top: 55%;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background: #c8354e;
+    color: #f1f2ff;
+}
+
+.gambling-send:hover {
+    background: #a22b3f;
+}
+
+
+.gambling-container {
+    position: absolute;
+    width:100%;
+    height: 90%;
+    top: 5%;
+}
+
+.gambling-plyphoto {
+    position: absolute;
+    left: 75%;
+    width: 40px;
+    height: 40px;
+    top: 3%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.gambling-plyphoto img {
+    padding: 0;
+    max-height: 100%;
+    min-width: 100%;
+}
+
+.gambling-plyname {
+    position: absolute;
+    width: 30%;
+    left: 67%;
+    height: 5%;
+    top: 12%;
+    font-size: 60%;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: rgb(214, 214, 214);
+}
+
+.gambling-rouletteside {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    top: 35%;
+    background: black;
+    
+    -webkit-transition: all 3s cubic-bezier(.215,.61,.355,1);
+    transition: all 8s cubic-bezier(.08,.6,0,1);
+    overflow-x: hidden;
+    overflow-y: visible; 
+}
+
+.lutfenolsn {
+    white-space: nowrap; 
+    -webkit-transition: all 3s cubic-bezier(.215,.61,.355,1);
+    transition: all 8s cubic-bezier(.08,.6,0,1);
+}
+
+.gambling-roulettes {
+    position: relative;
+    width: 17%;
+    border-radius: 1%;
+    height: 100%;
+    margin-left: 2%;
+    left: 1%;
+    border-radius: 5px;
+    float: left;
+}
+
+
+.gambling-roulettes:nth-child(odd) {
+    background-color: #a22b3f;
+}
+  
+.gambling-roulettes:nth-child(even) { 
+    background-color: rgb(194, 194, 194);
+}
+
+
+
+.hsn-phonemain-createnotification{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    height: 10%;
+    top: 5%;
+    border-radius: 10px;
+    margin-top: 1%;
+    background: rgba(65, 65, 65, 0.952);
+}
+
+.hsn-phonemain-createnotification-appname {
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    left: 20%;
+    top: 20%;
+    color: white;
+    font-size: 80%;
+    
+}
+
+.ntfy-container{
+    position: static;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.hsn-phonemain-createnotification-time {
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    right: 0;
+    top: 22%;
+    color: white;
+
+    font-size: 60%;
+}
+
+.hsn-phonemain-createnotification-photo {
+    position: absolute;
+    width: 15%;
+    height: 50%;
+    left: 2%;
+    top: 5%;
+    border-radius: 5px;
+    background: rgb(12, 163, 218);
+    overflow: hidden;
+}
+
+.hsn-phonemain-createnotification-photo i {
+    color: white;
+    padding-left: 25%;
+    padding-top: 20%;
+}
+
+.hsn-phonemain-createnotification-photo img {
+    padding: 0;
+    max-height: 100%;
+    min-width: 100%;
+}
+
+.hsn-phonemain-createnotification-comment {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    height: 30%;
+    bottom: 5%;
+    
+    color: rgb(218, 218, 218);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 70%;
+}
+
+.hsn-phonemain-createnotification-interactions {
+    position: relative;
+    width: 10%;
+    height: 25%;
+    left: 70%;
+    margin-left: 2%;
+    float: left;
+    top: 60%;
+    
+}
+
+.hsn-phonemain-createnotification-interactions i {
+    padding-left: 5%;
+}
+
+
+
+.toggleleft {
+    left: 75%;
+}
+
+.kisitla {
+    width: 60%;
+}
+
+.hsn-phonemain-billing-entry {
+    display: none;
+    position: absolute;
+    width: 100%;
+    
+    height: 100%;
+    top: -100%;
+    background-color: #003566;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.billing-header{
+    position: absolute;
+    width: 100%;
+    height: 7%;
+    top: 8%;
+}
+.billing-header p {
+    text-align: center;
+    color: #fff;
+}
+
+.billing-bcontainer {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 20%;
+    background-color: #001d3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.billing-header-totalbill {
+    position: absolute;
+    width: 40%;
+    height: 7%;
+    top: 13%;
+    left: 5%;
+    font-size: 70%;
+    text-align: center;
+    color: white;
+}
+
+
+.billing-header-totalbill-index {
+    position: absolute;
+    width: 40%;
+    height: 7%;
+    top: 16%;
+    left: 5%;
+    font-size: 60%;
+    text-align: center;
+    color: white;
+}
+
+.bills-payall{
+    position: absolute;
+    width: 20%;
+    right: 15%;
+    top: 12.5%;
+    font-family: Monthserrat;
+    background: #d9d9d9;
+    outline: none;
+    border: none;
+    
+    font-size: 70%;
+    border-radius: 5px;
+    transition: 0.6s all;
+}
+
+.bills-payall-index{
+    position: absolute;
+    width: 40%;
+    height: 7%;
+    top: 16%;
+    right: 5%;
+    font-size: 60%;
+    text-align: center;
+    color: white;
+}
+
+.bills-payall:hover {
+    background: #590d22;
+    color: white;
+}
+
+.billing-nonenotify{
+    display: none;
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    left: -90%;
+    font-size: 70%;
+    color: #e7ecef;
+    top: 30%;
+    text-align: center;
+}
+
+.myBills{
+    position: relative;
+    top: 5%;
+    margin-top: 5%;
+    width: 70%;
+    left: 15%;
+    height: 10%;
+    border-radius: 15px;
+    background: #003566;
+    transition: 0.4s background;
+}
+
+
+.myBills:hover {
+    background: #024788;
+}
+
+
+.myBills-cost {
+    position: absolute;
+    top: 20%;
+    width: 60%;
+    height: 20%;
+    left: 20%;
+    font-size: 70%;
+    text-align: center;
+    color: #2ec4b6;
+}
+
+.myBills-reason {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    height: 20%;
+    font-size: 65%;
+    color: #fff;
+    text-align: center;
+}
+
+
+.hsn-phonemain-ambulance-entry{
+    display: none;
+    position: absolute;
+    width: 100%;
+    
+    height: 100%;
+    top: -100%;
+    background-color: #66001f;
+    overflow-x: hidden;
+    overflow-y: visible;
+
+}
+
+.ambulance-welcome{
+    position: absolute;
+    width: 60%;
+    right: 2%;
+    top: 40%;
+    height: 8%;
+    text-align: center;
+    font-size: 70%;
+    color: rgb(218, 216, 216);
+    text-align: center;
+}
+
+.ambulance-job-label {
+    position: absolute;
+    width: 50%;
+    right: 5%;
+    top: 50%;
+    height: 8%;
+    font-size: 60%;
+    color: rgb(218, 216, 216);
+    text-align: center;
+}
+
+.police-welcome{
+    position: absolute;
+    width: 60%;
+    right: 2%;
+    top: 40%;
+    height: 8%;
+    text-align: center;
+    font-size: 70%;
+    color: rgb(218, 216, 216);
+    text-align: center;
+}
+
+.police-job-label {
+    position: absolute;
+    width: 50%;
+    right: 5%;
+    top: 50%;
+    height: 8%;
+    font-size: 60%;
+    color: rgb(218, 216, 216);
+    text-align: center;
+}
+
+.all-rights-reserved{
+    position: absolute;
+    width: 100%;
+    height: 4%;
+    bottom: 3%;
+   
+}
+
+.rights-icon{
+    position: absolute;
+    width: 10%;
+    height: 80%;
+    top: 10%;
+    left: 32%;
+    
+}
+
+
+
+.rights-icon i{
+    color: darkgrey;
+}
+
+.ambulance-selectfromgallery {
+    position: absolute;
+    width: 10%;
+    height: 5%;
+    right: 2%;
+    top: 59%;
+}
+
+.ambulance-selectfromgallery i {
+    color: #fff;
+    transition: color 0.4s;
+}
+
+.ambulance-selectfromgallery:hover i {
+    color: #007f5f;
+}
+
+
+
+.rights-message{
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    top: 10%;
+    left: 40%;
+    color: #fff;
+    opacity: 70%;
+    font-size: 60%;
+    padding-top: 1%;
+}
+
+
+.ambulance-topButtons {
+    position: relative;
+    width: 30%;
+    height: 8%;
+    border-radius: 5px;
+    top: 10%;
+    left: 5%;
+    float: left;
+    margin-left: 10%;
+    background-color: #f8edeb;
+    font-size: 70%;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.ambulance-topButtons > p {
+    padding-top: 13%;
+}
+
+.ap-selected {
+    background-color: #007f5f;
+}
+.ap-selected p {
+    color: white;
+}
+
+
+.ambulance-topcontainer {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-color: #432818;
+}
+
+.ambulance-bottomcontainer {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    
+    top: 30%; 
+}
+
+.ambulance-logo{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    top: 35%;
+    left: 5%;
+    overflow: hidden;
+}
+
+
+.ambulance-logo img{
+    padding: 0;
+    max-height: 100%;
+    min-width: 100%;
+}
+
+.ambulance-header-text{
+    position: absolute;
+    width: 60%;
+    right: 2%;
+    top: 65%;
+    height: 8%;
+    margin: 0 auto;
+    white-space: nowrap;
+    
+    box-sizing: border-box;
+}
+
+.ambulance-header-text p {
+    overflow: hidden;
+    box-sizing: border-box;
+    color: rgb(218, 216, 216);
+    white-space: nowrap;
+    font-size: 60%;
+}
+
+
+
+
+
+
+
+.ambulance-header-text:hover p {
+    animation-play-state: paused
+}
+
+
+
+#ambulance-createtext {
+    position: absolute;
+    width: 70%;
+    height: 20%;
+    left: 15%;
+    margin-top: 10%;
+    top: 30%;
+    border: none;
+    outline: none;
+    resize: none;
+    /* transition: all 0.1s ease-in-out; */
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.4vh;
+    /* background: #202026; */
+    color: black;
+    box-shadow: inset 0 0 2vh 0 rgba(0, 0, 0, 0.089);
+    
+}
+
+#ambulance-target {
+    position: absolute;
+    width: 70%;
+    height: 5%;
+    left: 15%;
+    margin-top: 10%;
+    top: 23%;
+    border: none;
+    outline: none;
+    resize: none;
+    /* transition: all 0.1s ease-in-out; */
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.4vh;
+    /* background: #202026; */
+    color: black;
+    box-shadow: inset 0 0 2vh 0 rgba(0, 0, 0, 0.089);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#ambulance-photo {
+    position: absolute;
+    width: 70%;
+    height: 5%;
+    left: 15%;
+    margin-top: 10%;
+    top: 52%;
+    border: none;
+    outline: none;
+    resize: none;
+    /* transition: all 0.1s ease-in-out; */
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.4vh;
+    /* background: #202026; */
+    color: black;
+    box-shadow: inset 0 0 2vh 0 rgba(0, 0, 0, 0.089);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.ambulance-SubmitData {
+    position: absolute;
+    width: 30%;
+    height: 7%;
+    left: 35%;
+    top: 70%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: #1b4965;
+    color: white;
+    font-weight: 400;
+    font-size: 70%;
+    font-family: Montserrat;
+}
+
+
+.records-container{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 30%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+.records-container::-webkit-scrollbar {
+    width: 3px;
+    padding-right: 2%;
+}
+
+.records-container-index{
+    position: relative;
+    width: 80%;
+    height: 90%;
+    left: 10%;
+    margin-top: 2%;
+    min-height: 40%;
+    background-color: #1b2432;
+    border-radius: 5px;
+    
+}
+
+.ambulance-records-time{
+    position: absolute;
+    width: 60%;
+    height: 5%;
+    bottom: 2%;
+    right: 2%;
+    font-size: 60%;
+    color: #e9edc9;
+    text-align: right;
+}
+
+.ambulance-records-plyname{
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    top: 10%;
+    left: 30%;
+    font-size: 70%;
+    color: #118ab2;
+    text-align: center;
+}
+
+.ambulance-records-plyname-index{
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    top: 20%;
+    left: 30%;
+    font-size: 60%;
+    color: white;
+    text-align: center;
+}
+
+.ambulance-records-message {
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    top: 40%;
+    left: 30%;
+    font-size: 70%;
+    color: #118ab2;
+    text-align: center;
+}
+
+
+
+
+.ambulance-records-message-index{
+    position: absolute;
+    width: 90%;
+    height: 35%;
+    top: 50%;
+    left: 5%;
+    font-size: 70%;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.ambulance-records-photolink {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    bottom: 2%;
+    left: 8%;
+    
+}
+.ambulance-records-photolink i {
+    font-size: 80%;
+    color: #e5989b;
+    padding-top: 20%;
+}
+
+.hovereffect {
+    display: none;
+    background-color: rgb(0,0,0);
+    position: absolute;
+    color: white;
+    font-size: 70%;
+    width: 300%;
+    height: 150%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 55% 75%, 50% 100%, 45% 75%, 0% 75%);
+    text-align: center;
+    bottom: 105%;
+    left: -100%;
+    padding-top: 30%;
+}
+
+
+.ambulance-records-photolink:hover .hovereffect {
+    display: block;
+}
+
+.ambulance-records-delete {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 2%;
+    right: 1%;
+}
+
+.ambulance-records-delete i{
+    color: #fb5607;
+    transition: 0.4s color;
+}
+
+.ambulance-records-delete:hover i {
+    color: #d62828;
+}
+
+.ambulance-records-nonenotify {
+    display: none;
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    height: 8%;
+    top: 5%;
+    left: -90%;
+    color: #fff;
+    font-size: 70%;
+    text-align: center;
+}
+
+.hsn-phonemain-camera{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    background-color: #595959;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+
+
+.hsn-phonemain-police-entry {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    background-color: #003566;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.police-topside{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-color: #001d3d;
+}
+
+.police-bottomside {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    top: 30%;
+}
+
+.police-indexside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.police-showply {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    overflow-y: scroll;
+    overflow-y: hidden;
+}
+
+.police-showvehdata{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    overflow-y: scroll;
+    overflow-y: hidden; 
+}
+
+.police-logoside{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    left: 10%;
+    top: 30%;
+    
+}
+
+.police-logoside img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: 10% 15%;
+}
+
+.police-welcomemessage{
+    position: absolute;
+    width: 50%;
+    height: 20%;
+    top: 50%;
+    left: 50%;
+    
+    font-size: 70%;
+    color: #d0cece;
+}
+
+.police-buttons {
+    position: relative;
+    width: 30%;
+    height: 8%;
+    border-radius: 5px;
+    outline: none;
+    top: 10%;
+    float: left;
+    margin-left: 10%;
+    left: 5%;
+    border: none;
+    background-color: #001d3d;
+    color: white;
+    transition: 0.6s background-color;
+}
+
+.police-search-citizen {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    top: 20%;
+}
+
+.police-search-vehicle{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    top: 20%;
+}
+
+#police-search-citizen-input {
+    position: absolute;
+    width: 70%;
+    height: 12%;
+    top: 8%;
+    left: 15%;
+    resize: none;
+    outline: none;
+    color: black;
+    font-family: Montserrat;
+    border-radius: 5px;
+}
+
+#police-search-vehicle-input {
+    position: absolute;
+    width: 70%;
+    height: 12%;
+    top: 8%;
+    left: 15%;
+    resize: none;
+    outline: none;
+    color: black;
+    font-family: Montserrat;
+    border-radius: 5px;
+}
+
+.police-search {
+    position: absolute;
+    width: 10%;
+    height: 12%;
+    top: 8%;
+    right: 2%;
+    resize: none;
+    outline: none;
+    
+}
+
+.police-search i{
+    color: #b36a5e;
+    font-size: 110%;
+    padding-top: 25%;
+    transition: 0.6s color;
+}
+.police-search:hover i{
+    color: #1a535c;
+}
+
+.policeselected {
+    background-color: #006d77;
+}
+
+.citizen-search-resultside {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 25%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.citizen-result{
+    position: relative;
+    width: 70%;
+    height: 25%;
+    border-radius: 10px;
+    background-color: #001d3d;
+    margin-top: 2%;
+    left: 15%;
+    transition: background-color 0.6s;
+}
+
+.citizen-result p {
+    text-align: center;
+    padding-top: 8%;
+    font-size: 70%;
+    color: white;
+}
+
+.noresults-search{
+    display: none;
+    position: absolute;
+    width: 70%;
+    height: 25%;
+    border-radius: 10px;
+    margin-top: 2%;
+    left: 15%;
+    color: white;
+    text-align: center; 
+    font-size: 80%;
+}
+
+.citizen-result:hover {
+    background-color: #16697a;
+}
+
+.police-plyname {
+    position: absolute;
+    width: 30%;
+    height: 5%;
+    top: 5%;
+    left: 5%;
+    font-size: 70%;
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.police-plyname-index{
+    position: absolute;
+    width: 30%;
+    height: 5%;
+    top: 10%;
+    left: 5%;
+    font-size: 60%;
+    color: rgb(197, 197, 197);
+    text-align: center;
+    padding-top: 5%;
+}
+
+.police-phonenumber {
+    position: absolute;
+    width: 30%;
+    height: 5%;
+    top: 5%;
+    left:30%;
+    font-size: 70%;
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+.police-phonenumber-index {
+    position: absolute;
+    width: 30%;
+    height: 5%;
+    top: 10%;
+    left: 30%;
+    font-size: 70%;
+    color: rgb(197, 197, 197);
+    text-align: center;
+    padding-top: 5%;
+}
+
+.police-plyphoto {
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    right: 5%;
+    top: 2%;
+    background-color: red;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.police-plyphoto img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: 10% 15%;
+}
+
+.pd-plyfile-container{
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    height: 40%;
+    top: 25%;
+    background-color:#001d3d ;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 5px;
+}
+
+#plyfile-textarea-reason {
+    position: absolute;
+    width: 80%;
+    height: 20%;
+    left: 10%;
+    top: 30%;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+    color: black;
+}
+
+#plyfile-textarea-photo {
+    position: absolute;
+    width: 80%;
+    height: 20%;
+    left: 10%;
+    top: 55%;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+    color: black;
+}
+
+.pd-plyfile-header{
+    position: absolute;
+    width: 80%;
+    height: 8%;
+    left: 10%;
+    top: 10%;
+    color: white;
+    font-size: 80%;
+    text-align: center;
+}
+
+.police-selectfromgallery {
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    left: 80%;
+    top: 56%;
+    
+}
+
+.police-selectfromgallery i {
+    padding-left: 10%;
+    padding-top: 25%;
+    color: #001d3d;
+    transition: 0.6s color;
+}
+.police-selectfromgallery:hover i {
+    color: #ef476f;
+}
+
+.plyfile-submitbutton {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    bottom: 8%;
+    left: 45%;
+}
+
+.plyfile-submitbutton i {
+    padding-left: 8%;
+    color: #98c1d9;
+    transition: 0.6s color;
+}
+
+.plyfile-submitbutton:hover i {
+    color: #ef476f;
+}
+
+.pd-plyfiles-container{
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    height: 20%;
+    top: 68%;
+    background-color:#001d3d ;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 5px;
+}
+
+.pd-plyfile{
+    position: relative;
+    width: 90%;
+    left: 5%;
+    height: 80%;
+    margin-top: 3%;
+    background-color: #1a535c;
+    border-radius: 5px;
+    overflow-y: hidden;
+}
+
+.pd-plyfile-reason{
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    left: 5%;
+    top: 10%;
+    font-size: 70%;
+    color: white;
+}
+
+.pd-plyfile-delete{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    right: 2%;
+    top: 5%;
+}
+
+.pd-plyfile-delete i {
+    transition: 0.6s color;
+}
+
+.pd-plyfile-delete:hover i {
+    color: #d62828;
+}
+
+.pd-plyfile-link{
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    left: 5%;
+    bottom: 8%;
+}
+
+.pd-plyfile-link i {
+    color: black;
+    transition: 0.6s color;
+}
+
+.pd-plyfile-link:hover i {
+    color: #d90429
+}
+
+.pd-linkhovereffect {
+    display: none;
+    background-color: rgb(0,0,0);
+    position: absolute;
+    color: white;
+    font-size: 70%;
+    width: 300%;
+    height: 150%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 55% 75%, 50% 100%, 45% 75%, 0% 75%);
+    text-align: center;
+    bottom: 105%;
+    left: -100%;
+    padding-top: 30%;
+} 
+
+.pd-plyfile-link:hover .pd-linkhovereffect {
+    display: block;
+}
+
+.pd-plyfiles-none {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    top: 10%;
+    color: white;
+    font-size: 70%;
+    text-align: center;
+}
+
+.showvehdata-info {
+    position: relative;
+    width: 80%;
+    height: 12%;
+    left: 10%;
+    top: 10%;
+    border-radius: 5px;
+    margin-top: 5%;
+    background-color: #031d44;
+}
+
+.showvehdata-icon {
+    position: absolute;
+    width: 10%;
+    height: 30%;
+    top: 35%;
+    left: 10%;
+}
+.showvehdata-icon i {
+    color: white;
+}
+
+.showvehdata-title{
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    top: 33%;
+    left: 20%;
+    font-size: 70%;
+    color: #ffd23f;
+    padding-top: 2%;
+}
+
+.showvehdata-title-index {
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    top: 33%;
+    left: 60%;
+    font-size: 70%;
+    color: #ffd23f;
+    padding-top: 2%;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.showvehdata-header{
+    position: absolute;
+    width: 80%;
+    height: 8%;
+    top: 5%;
+    text-align: center;
+    color: white;
+    left: 10%;
+}
+
+.bank-topcontainer{
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    background-color: #284b63;
+}
+
+.bank-bottomcontainer {
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    top: 25%;
+    background-color: #415a77;
+}
+
+.bank-photo{
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    top: 35%;
+    right: 5%;
+    
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bank-photo img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: 10% 15%;
+}
+
+
+.bank-plyName {
+    position: absolute;
+    width: 30%;
+    height: 10%;
+    right: 5%;
+    bottom: 5%;
+    border-radius: 5px;
+    font-size: 60%;
+    color: white;
+    text-align: center;
+}
+
+.bank-üstbilgiler-iban{
+    position: absolute;
+    width: 30%;
+    height: 8%;
+    top: 45%;
+    left: 5%;
+    font-size: 70%;
+    color: #fca311;
+    text-align: center;
+}
+
+.bank-üstbilgiler-iban-index {
+    position: absolute;
+    width: 30%;
+    height: 8%;
+    top: 60%;
+    left: 5%;
+    font-size: 70%;
+    color: white;
+    text-align: center;
+}
+
+.bank-üstbilgiler-amount {
+    position: absolute;
+    width: 30%;
+    height: 8%;
+    top: 45%;
+    left: 30%;
+    font-size: 70%;
+    color: #fca311;
+    text-align: center;
+}
+
+
+.bank-üstbilgiler-amount-index {
+    position: absolute;
+    width: 30%;
+    height: 8%;
+    top: 60%;
+    left: 30%;
+    font-size: 70%;
+    color: white;
+    text-align: center;
+}
+
+.bank-sendmoney{
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    left: 10%;
+    top: 60%;
+    background-color: #eb5e28;
+    border-radius: 15px;
+    font-size: 80%;
+    text-align: center;
+    transition: 0.6s background-color;
+}
+.bank-sendmoney p {
+    padding-top: 7%;
+    color: white;
+}
+
+.send-bank-icon{
+    position: absolute;
+    width: 15%;
+    height: 10%;
+    left: 10%;
+    top: 24%;
+    
+}
+
+.send-bank-icon-2{
+    position: absolute;
+    width: 15%;
+    height: 10%;
+    left: 10%;
+    top: 34%;
+    
+}
+
+.send-bank-icon-2 i{
+    color: black;
+    font-size: 120%;
+    padding: 28%;
+    padding-top: 30%;
+    
+}
+
+.send-bank-icon i {
+    color:black;
+    font-size: 140%;
+    padding: 28%;
+    padding-top: 30%;
+}
+
+#bank-send-amount {
+    position: absolute;
+    width: 60%;
+    height: 7%;
+    left: 28%;
+    top: 25%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: black;
+    padding-left: 5%;
+}
+
+#bank-send-iban {
+    position: absolute;
+    width: 60%;
+    height: 7%;
+    left: 28%;
+    top: 35%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: black;
+    padding-left: 5%;
+}
+
+.bank-sendmoney:hover {
+    background-color: #22223b;
+}
+
+.hoverappstore {
+    
+}
+
+.hoverappstore i {
+    color: #8ac926;
+    transition: 0.6s color;
+}
+
+.hoverappstore:hover i {
+    color: #c9184a;
+}
+
+
+
+.settings-customize-header {
+    position: absolute;
+    width: 80%;
+    left: 5%;
+    height: 3%;
+    
+    top: 30%;
+    font-size: 80%;
+    color: white;
+}
+
+.s-page-background{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #e8e8e4;
+    left: -100%;
+    top:-50%;
+}
+
+.s-page-language{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #e8e8e4;
+    left: -100%;
+    top:-50%;
+}
+
+.cars-index{
+    position: relative;
+    width: 80%;
+    height: 10%;
+    left: 10%;
+    background-color: #22333b;
+    margin-top: 5%;
+    top: 10%;
+    border-radius: 5px;
+}
+
+.carlabel {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 38%;
+    left: 5%;
+    color: #fca311;
+    font-size: 80%;
+    text-align: center;
+}
+
+.carplate {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 38%;
+    left: 40%;
+    color: white;
+    font-size: 80%;
+    text-align: center;
+}
+
+.carinfo {
+    position: absolute;
+    width: 15%;
+    height: 30%;
+    top: 35%;
+    left: 75%;
+    font-size: 80%;
+    text-align: center;
+}
+
+.carinfo i {
+    font-size: 120%;
+    color: white;
+    transition: color 0.5s;
+}
+
+.stored:hover i {
+    color: #ffd60a;
+}
+
+
+.notstored:hover .carinfo-box{
+    display: block;
+}
+
+.carinfo-box {
+    display: none;
+    background-color: rgb(0,0,0);
+    position: absolute;
+    color: #ffc300;
+    font-size: 80%;
+    width: 380%;
+    height: 220%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 55% 75%, 50% 100%, 45% 75%, 0% 75%);
+    bottom: 105%;
+    left: -140%;
+    padding-top: 30%;
+}
+
+.notstored i{
+    color: #ba181b;
+}
+
+.cars-nonenotify{
+    display: none;
+    position: absolute;
+    width: 80%;
+    height: 20%;
+    text-align: center;
+    top: 20%;
+    color: #ffc300;
+    font-size: 80%;
+    left: 10%;
+}
+
+.cars-container{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 5%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.hsn-phonemain-cars-entry p {
+    position: absolute;
+    color: white;
+    font-size: 90%;
+    padding-top: 20%;
+    left: 10%;
+}
+
+.hsn-phonemain-messages-entry {
+    overflow-x: hidden;
+    overflow-y: visible; 
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    background-color: #515e7b;
+}
+
+.format-message{
+    overflow-x: hidden;
+    overflow-y: visible; 
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    background-color: #515e7b;
+}
+
+
+.hsn-phonemain-ads-entry {
+    overflow-x: hidden;
+    overflow-y: visible; 
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    background-color: #181818;
+}
+
+.ads-newAdd{
+    position: absolute;
+    width: 10%;
+    height: 5%;
+    left: 45%;
+    top: 91%;
+}
+
+.ads-newAdd i {
+    font-size: 170%;
+    color: #fca311;
+    transition: color 0.5s;
+}
+
+.ads-newAdd:hover i {
+    color: #c58d32;
+}
+
+.ads-none {
+    position: absolute;
+    width: 90%;
+    height: 8%;
+    top: 15%;
+    color: #ffffff;
+    font-size: 80%;
+    text-align: center;
+    left: -90%;
+}
+
+.ads-container {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 10%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.ads-index-s {
+    position: relative;
+    width: auto;
+    max-width: 80%;
+    left: 5%;
+    height: 5%;
+    padding-top: 2%;
+    font-size: 75%;
+    color: white;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    float: left;
+    margin-left: 2%;
+}
+
+
+.ads-index-s i {
+    padding-left: 25%;
+    transition: opacity 0.5s;
+    font-size: 105%;
+    
+}
+.ads-index-s:hover i {
+    opacity: 80%;
+}
+
+
+.ads-texts {
+    position: relative;
+    width: auto;
+    height: auto;
+    left: 5%;
+    margin-top: 0;
+    max-width: 85%;
+}
+
+.ads-texts .textside {
+    position: relative;
+    height: auto;
+    width: 80%;
+    margin-left: 2%;
+    margin-top: 15%;
+    color: black;
+    font-size: 70%;
+}
+
+.ads-texts .photoside {
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin-top: 3%;
+}
+
+
+
+.ads-newadd-page{
+    display: none;
+    position: absolute;
+    bottom: -80%;
+    width: 100%;
+    height: 30%;
+    background-color: #0081a7;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#ads-message {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    height: 20%;
+    top: 25%;
+    resize: none;
+    outline: none;
+    border: none;
+    color: black;
+    border-radius: 10px;
+}
+#ads-photo {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    height: 20%;
+    top: 50%;
+    resize: none;
+    outline: none;
+    border: none;
+    color: black;
+    border-radius: 10px;
+}
+
+
+
+.ads-newadd-page p{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    top: 5%;
+    color: black;
+    font-size: 80%;
+    text-align: center;
+}
+
+
+.adss-newadd-index{
+    position: relative;
+    width: 10%;
+    height: 10%;
+    top: 75%;
+    left: 25%;
+    margin-left: 10%;
+    float: left;
+}
+
+.ads-selectfromgallery{
+    position: absolute;
+    width: 5%;
+    right: 3%;
+    height: 10%;
+    top: 55%;
+}
+
+.ads-selectfromgallery i {
+    color: #003049;
+    transition: 0.6s color;
+}
+
+.ads-selectfromgallery:hover i {
+    color: #38b000;
+}
+
+
+.adss-newadd-index i {
+    color:#bc6c25;
+    padding-left: 5%;
+    transition: 0.6s color;
+}
+.adss-newadd-index:hover i {
+    color: #007f5f;
+}
+
+.ads-time{
+    position: absolute;
+    width: 10%;
+    height: 15px;
+    top: 5px;
+    color: black;
+    font-size: 80%;
+    right: 2%;
+}
+
+.twitternonenotify {
+    position: absolute;
+    width: 100%;
+    height: 8%;
+    top: 10%;
+    color: white;
+    font-size: 80%;
+    text-align: center;
+}
+
+.contacts-calside{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.hsn-phonemain-messages-entry p{
+    position: absolute;
+    width: 80%;
+    height: 5%;
+    left: 10%;
+    color: #fff;
+    top: 8%;
+}
+
+#messages-searchbar {
+    position: absolute;
+    width: 70%;
+    height: 6%;
+    top: 14%;
+    left: 15%;
+    border-radius: 15px;
+    background: #636e89;
+    outline: none;
+    padding-left: 2%;
+    color: white;
+    transition: border 0.3s;
+    border: none;
+}
+
+#messages-searchbar:focus {
+    border: .2vh solid #118ab2;
+}
+
+.search-bar-icon {
+    position: absolute;
+    width: 5%;
+    height: 3%;
+    top: 15%;
+    left: 76%;
+}
+
+.search-bar-icon i {
+    color: white;
+    font-size: 90%;
+    padding-top: 20%;
+    transition: color 0.4s;
+}
+
+.search-bar-icon:hover i{
+    color: #d00000;
+}
+
+.messages-indexside{
+    position: absolute;
+    width: 100%;
+    height: 72%;
+    top: 23%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.messages-indexside::-webkit-scrollbar {
+    width: 3px;
+    padding-right: 2%;
+}
+
+.messages-index {
+    position: relative;
+    width: 80%;
+    height: 14%;
+    margin-top: 3%;
+    left: 10%;
+    border-radius: 5px;
+    background: #343a40;
+    top: 0;
+    transition: background 0.4s;
+}
+
+
+
+.messages-index:hover {
+    background: #4e575f;
+}
+
+.messages-index-photo {
+    position: absolute;
+    width: 20%;
+    height: 60%;
+    top: 10%;
+    left: 5%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.messages-index-photo img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: 10% 15%;
+}
+
+.messages-index-text{
+    position: absolute;
+    width: 80%;
+    height: 25%;
+    left: 5%;
+    bottom: 2%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(191, 191, 191);
+    font-size: 60%;
+}
+
+.messages-index-time {
+    position: absolute;
+    width: 15%;
+    height: 25%;
+    right: 0%;
+    bottom: 2%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(191, 191, 191);
+    font-size: 65%;
+}
+
+.messages-nonenotify {
+    position: absolute;
+    width: 80%;
+    height: 5%;
+    margin-top: 3%;
+    left: 10%;
+    border-radius: 5px;
+    top: 25%;
+    color: white;
+    text-align: center;
+    font-size: 70%;
+    transition: background 0.4s;
+}
+
+.messages-name {
+    position: absolute;
+    width: 70%;
+    left: 30%;
+    height: 20%;
+    top: 30%;
+    color: white;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 75%;
+}
+
+.messages-messageindex{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background-color: #004b23;
+}
+
+.messages-messageindex-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #004b23; 
+}
+
+.messages-top-info {
+    position: relative;
+    width: 100%;
+    height: 14%;
+}
+
+
+.messages-top-info-2 {
+    position: relative;
+    width: 100%;
+    height: 14%;
+}
+.messages-chatside{
+    position: relative;
+    width: 100%;
+    height: 86%;
+    background-image: url('./images/chat-messages.png');
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.messages-chatside-2{
+    position: relative;
+    width: 100%;
+    height: 86%;
+    background-image: url('./images/chat-messages.png');
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.top-info-photo {
+    position: absolute;
+    width: 20%;
+    height: 50%;
+    left: 5%;
+    bottom: 7%;
+    overflow-x: hidden;
+    border-radius: 5px;
+}
+
+.top-info-photo img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: 10% 15%;
+}
+
+.top-info-photo-2 {
+    position: absolute;
+    width: 20%;
+    height: 50%;
+    left: 5%;
+    bottom: 7%;
+    overflow-x: hidden;
+    border-radius: 5px;
+}
+
+.top-info-photo-2 img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: 10% 15%;
+}
+
+.top-info-name {
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    bottom: 16%;
+    left: 30%;
+    font-size: 80%;
+    color: white;
+    
+}
+
+.top-info-name-2 {
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    bottom: 16%;
+    left: 30%;
+    font-size: 80%;
+    color: white;
+    
+}
+
+.top-info-settings{
+    position: absolute;
+    width: 5%;
+    height: 30%;
+    right: 6%;
+    bottom: 10%;
+}
+
+
+.top-info-settings i {
+    color: white;
+    transition: color 0.4s;
+}
+
+.top-info-settings:hover i {
+    color : #007f5f;
+}
+
+.top-info-settings-2{
+    position: absolute;
+    width: 5%;
+    height: 30%;
+    right: 6%;
+    bottom: 10%;
+}
+
+
+.top-info-settings-2 i {
+    color: white;
+    transition: color 0.4s;
+}
+
+.top-info-settings-2:hover i {
+    color : #007f5f;
+}
+
+.messages-side {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.messages-side::-webkit-scrollbar {
+    position: absolute;
+    width: .3vh;
+}
+
+.messages-side-2 {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.messages-side-2::-webkit-scrollbar {
+    position: absolute;
+    width: .3vh;
+}
+
+.messages-text{
+    position: absolute;
+    width: 70%;
+    left: 5%;
+    height: 7%;
+    border-radius: 20px;
+    background-color: #e2e2e2;
+    bottom: 9%;
+    outline: none;
+    border: none;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    border: 1px solid rgb(151, 151, 151);
+    padding-left: 10%;
+    color: black;
+}
+
+.messages-text-2{
+    position: absolute;
+    width: 70%;
+    left: 5%;
+    height: 7%;
+    border-radius: 20px;
+    background-color: #e2e2e2;
+    bottom: 9%;
+    outline: none;
+    border: none;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    border: 1px solid rgb(151, 151, 151);
+    padding-left: 10%;
+    color: black;
+}
+
+.messages-features {
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    left: 9%;
+    bottom: 10%;
+    
+}
+
+.messages-features i {
+    font-size: 90%;
+    padding-top: 35%;
+    padding-left: 35%;
+    color: black;
+    transition: 0.5s color;
+}
+
+.messages-features:hover i {
+    color: cadetblue;
+}
+
+
+
+
+.messages-send {
+    position: absolute;
+    width: 10%;
+    left: 80%;
+    height: 5%;
+    bottom: 10%;
+    background-color: #38b000;
+    border-radius: 65%;
+    transition: 0.3s background-color;
+}
+
+.messages-send i {
+    color: white;
+    padding-left: 22%;
+    padding-top: 13%;
+    
+}
+
+.messages-send:hover  {
+    background-color:#329404;
+}
+
+
+.messages-send-2 {
+    position: absolute;
+    width: 10%;
+    left: 80%;
+    height: 5%;
+    bottom: 10%;
+    background-color: #38b000;
+    border-radius: 65%;
+    transition: 0.3s background-color;
+}
+
+.messages-send-2 i {
+    color: white;
+    padding-left: 22%;
+    padding-top: 13%;
+    
+}
+
+.messages-send-2:hover  {
+    background-color:#329404;
+}
+
+
+
+
+
+.messages-openedchat-message {
+    position: relative;
+    width: fit-content;
+    max-width: 75%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    height: auto;
+    margin-top: .7vh;
+    padding: .4vh 1vh;
+    text-indent: .3vh;
+    transition: .1s linear;
+    font-size: 1.2vh;
+    margin-left: 4vh;
+    background-color: red;
+}
+
+.messages-openedchat-message-me {
+    background: black;
+    border-radius: .5vh 0 .5vh .5vh;
+    float: right;
+    left: -.5vh;
+    color: var(--theme-font-color);
+}
+
+.messages-openedchat-message-other {
+    background: black;
+    border-radius: .5vh 0 .5vh .5vh;
+    left: 0vh;
+    color: var(--theme-font-color);
+}
+
+.messages-openedchat-span > img {
+    max-width: 17vh;
+}
+
+span.messages-openedchat-span {
+    user-select: text;
+}
+
+.messages-openedchat-message-time {
+    font-size: 1.1vh;
+    text-align: right;
+    padding-left: 3.7vh;
+    margin-top: -.25vh;
+    font-family: 'Samsung Sans Regular';
+    color: var(--theme-font-color);
+}
+
+
+
+.messages-openedchat-messages::-webkit-scrollbar {
+    position: absolute;
+    width: .3vh;
+}
+
+.messages-openedchat-messages::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.messages-openedchat-messages::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.664);
+    border-radius: 1vh 0 0 1vh;
+}
+
+
+.contacts-bottom-indexs {
+    position: relative;
+    width: 35%;
+    height: 4%;
+    top: 90%;
+    float: left;
+    margin-left: 7%;
+    text-align: center;
+    font-size: 80%;
+    border-radius: 5px;
+}
+
+.contacts-bottom-indexs > span {
+    color: black;
+    transition: color 0.6s;
+}
+
+.contactsselected span{
+    color: #0ead69;
+
+}
+
+.contacts-bottom-indexs:hover span {
+    color: rgb(74, 138, 36);
+}
+
+.contact-keyboard-page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.contacts-shownumberr{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    height: 7%;
+    border-radius: 20px;
+    background-color: #e2e2e2;
+    top: 15%;
+    outline: none;
+    border: none;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    border: 1px solid rgb(151, 151, 151);
+    text-align: center;
+    
+
+}
+
+
+.contacts-shownumberr p {
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    font-size: 90%;
+    padding-top: 3%;
+}
+
+.contacts-numbers {
+    position: relative;
+    width: 21%;
+    height: 7%;
+    top: 25%;
+    left: 5%;
+    margin-left: 7%;
+    float: left;
+    text-align: center;
+    padding-top: 7%;
+    transition: 0.1s;
+    margin-top: 10%;
+}
+
+.contacts-numbers:active {
+    color: #2b9348;
+}
+
+
+
+
+
+
+.messages--container {
+    position: relative;
+    width: fit-content;
+    max-width: 75%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    height: auto;
+    float: left;
+    min-width: 10%;
+    margin-top: .8vh;
+    padding: .4vh 0.5vh;
+    text-indent: .3vh;
+    transition: .1s linear;
+    font-size: 1.2vh;
+    margin-left: 80%;
+    background: #ffffff;
+    border-radius: 2px;
+}
+
+
+
+.sender-messages-me {
+    float: right;
+    left: -.5vh;
+    background: #dcf8c6;
+}
+.sender-messages-target {
+    left: -.5vh;
+}
+
+
+.messages-photoside {
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin-top: 3%;
+    right: 1%;
+}
+
+
+.messages-photoside img {
+    max-width:100%;
+    min-width:100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.messages-message-time {
+    position: relative;
+    bottom: 0;
+    margin-top: 2%;
+    float: right;
+    font-size: 80%;
+}
+
+.messages-features-container{
+    display: none;
+    position: absolute;
+    width: 50%;
+    left: 10%;
+    height: 6%;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    border: 1px solid rgb(151, 151, 151);
+    top: 79%;
+    border-radius: 10px;
+    background-color: #e2e2e2;
+}
+
+.messages-features-container-2 {
+    display: none;
+    position: absolute;
+    width: 50%;
+    left: 10%;
+    height: 6%;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    border: 1px solid rgb(151, 151, 151);
+    top: 79%;
+    border-radius: 10px;
+    background-color: #e2e2e2;
+}
+
+.features-index {
+    position: relative;
+    width: 20%;
+    height: 80%;
+    top: 10%;
+    margin-left: 10%;
+    background: #14213d;
+    float: left;
+    border-radius: 10%;
+    transition: 0.4s all;
+}
+
+.features-index i {
+    color: white;
+    padding: 10% 20%;
+}
+
+.features-index:hover {
+    background: #2b2d42;
+}
+
+.messages-nonenotify-a{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    height: auto;
+    margin-top: .8vh;
+    text-indent: .3vh;
+    transition: .1s linear;
+    font-size: 1.2vh;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.messages-nonenotify-a-2{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    height: auto;
+    margin-top: .8vh;
+    text-indent: .3vh;
+    transition: .1s linear;
+    font-size: 1.2vh;
+    border-radius: 2px;
+    text-align: center;
+}
+
+
+.messages-openedchat-messages {
+    position: absolute;
+    height: 74%;
+    width: 90%;
+    top: 10vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+}
+
+.messages-openedchat-messages::-webkit-scrollbar {
+    position: absolute;
+    width: .3vh;
+}
+
+.messages-openedchat-messages::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.messages-openedchat-messages::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.664);
+    border-radius: 1vh 0 0 1vh;
+}
+
+.messages-openedchat-message {
+    position: relative;
+    width: fit-content;
+    max-width: 75%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    height: auto;
+    margin-top: .7vh;
+    padding: .4vh 1vh;
+    text-indent: .3vh;
+    transition: .1s linear;
+    font-size: 1.2vh;
+    margin-left: 4vh;
+    background-color: red;
+}
+
+.messages-shared-location:hover {
+    opacity: .8;
+    transition: .1s linear;
+}
+
+.messages-openedchat-message-me {
+    background: #dcf8c6;
+    border-radius: 2px;
+    float: right;
+    left: -.5vh;
+}
+
+.messages-openedchat-message-target {
+    
+    background: #ffffff;
+    border-radius: 2px;
+    left: -3.3vh;
+}
+
+
+.messages-openedchat-message-photo {
+    position: relative;
+    width: 95%;
+    height: auto;
+    left: 2.5%;
+    margin-top: 2%;
+    overflow: hidden;
+}
+
+
+.messages-openedchat-message-photo  img{
+    max-width:100%;
+    min-width:100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.messages-openedchat-message-time {
+    font-size: 1.0vh;
+    text-align: right;
+    padding-left: 3.7vh;
+    margin-top: 2%;
+    font-family: 'Samsung Sans Regular';
+}
+
+.unique-chat {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1vh;
+    top: 0;
+}
+
+.messages-openedchat-message-gps{
+    position: relative;
+    margin-top: 2%;
+    font-size: 1.2vh;
+    text-align: left;
+    left: -0.5vh;
+}
+
+.messages-openedchat-date {
+    position: relative;
+    margin: 0 auto;
+    margin-top: .2vh;
+    text-align: center;
+    /* background: #d2ecf9; */
+    width: fit-content;
+    padding: .4vh;
+    height: 2vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1vh;
+    border-radius: .4vh;
+    /* box-shadow: 0 0 .2vh 0 rgba(0, 0, 0, 0.2); */
+    margin-bottom: .7vh;
+    /* text-transform: uppercase; */
+    color: var(--theme-font-color);
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+.clearfix {
+    display: block;
+}
+
+.messages-openedchat-name>p {
+    font-weight: 300;
+    height: 3vh;
+    line-height: 1.5vh;
+    margin-top: 0.8vh;
+    max-width: 22vh;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0.7vh 0;
+}
+
+.messages-openedchat-picture {
+    left: -4vh;
+    top: 0;
+    position: absolute;
+}
+
+.messages-openedchat-span > img {
+    max-width: 17vh;
+    padding-left: 1%;
+}
+
+span.messages-openedchat-span {
+    user-select: text;
+}
+
+.messages-openedchat-message-gps i {
+    color: black;
+    transition: 0.4s all;
+}
+
+
+.messages-openedchat-message-gps i:hover {
+    color: chocolate;
+}
+
+
+.ads-header {
+    position: absolute;
+    width: 80%;
+    height: 5%;
+    top: 10.2%;
+    left: 10%;
+    color: white;
+    text-align: center;
+    font-size: 85%;
+}
+
+.ads-index-container {
+    position: absolute;
+    width: 93%;
+	margin-left: 10;
+    height: 75%;
+    top: 15%;
+    box-shadow: inset 0 0 10px #000000;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+.ads-index-container::-webkit-scrollbar {
+    position: absolute;
+    width: .4vh;
+}
+
+
+.ads-index{
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #181818;
+    margin-top: 2%;
+    
+}
+
+.ads-photo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    top: 8%;
+    overflow: hidden;
+    
+    left: 2%;
+}
+
+.ads-playername {
+    position: absolute;
+    
+    width: 55px;
+    border-radius: 5px;
+    overflow: hidden;
+    left: 25%;
+    top: 2%;
+    color: white;
+    font-size: 80%;
+    text-align: center;
+    float: left;
+    
+}
+
+.ads-indexs-tooltip-c{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 47%;
+    top: 2%;
+    color: #f1c40f;
+    transition: 0.4s all;
+    font-size: 90%;
+}
+
+.ads-indexs-tooltip-m {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 54%;
+    top: 2%;
+    color: #f1c40f;
+    transition: 0.4s all;
+    font-size: 90%;
+}
+.ads-indexs-tooltip-e {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 61%;
+    top: 2%;
+    color: #f1c40f;
+    transition: 0.4s all;
+    font-size: 90%;
+}
+.ads-indexs-tooltip-d {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 68%;
+    top: 2%;
+    color: #f1c40f;
+    transition: 0.4s all;
+    font-size: 90%;
+}
+
+
+.ads-indexs-tooltip-c:hover i {
+    color: #a85311;
+}
+.ads-indexs-tooltip-m:hover i {
+    color: #a85311;
+}
+
+.ads-indexs-tooltip-e:hover i {
+    color: #a85311;
+}
+.ads-indexs-tooltip-d:hover i {
+    color: #a85311;
+}
+
+
+
+
+
+
+
+.ads-photo img {
+    padding: 0;
+    max-height: 100%;
+    min-width: 100%;
+}
+
+.ads-nads{
+    position: absolute;
+    width: 50%;
+    height: 4%;
+    border-radius: 15px;
+    left: 25%;
+    background-color: rgb(43, 42, 42);
+    bottom: 4%;
+    transition: 0.4s all;
+}
+
+
+.ads-nads:hover {
+    background-color: rgb(68, 68, 68);
+}
+
+
+
+
+.ads-index-tooltip-msgside {
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin-left: 10%;
+    top: 30%;
+    max-width: 85%;
+    background-color: red;
+}
+
+.ads-index-tooltip-msgside-msg{
+    position: relative;
+    width: 100%;
+    height: auto;
+	top: 10;
+    color: white;
+    font-size: 80%;
+    text-align: center;
+    
+}
+
+
+.ads-index-tooltip-msgside-photo {
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin-top: 3%;
+    padding-bottom: 2%;
+}
+
+.ads-index-tooltip-msgside-photo img{
+    max-width:100%;
+    min-width:100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+
+.ads-newads-page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #141414;
+    left: -90%;
+}
+
+.ads-send {
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    width: 40%;
+    height: 6%;
+    border-radius: 10px;
+    background-color: #ffb703;
+    color: rgba(255, 255, 255, 0.863);
+    transition: all 500ms;
+    font-family: "Montserrat";
+}
+
+.ads-send:hover {
+    color: black;
+}
+
+#ads-new-message {
+    position: absolute;
+    border: none;
+    height: 15vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color: rgb(233, 233, 233);
+    outline: none;
+    border-left: 2px solid #1da0f200;
+    resize: none;
+    transition: all 0.1s ease-in-out;
+    font-family: 'Heebo', sans-serif;
+    padding: 0.87vh;
+    font-size: 1.4vh;
+    top: 12%;
+    width: 22vh;
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: inset 0 0 2vh 0 rgba(0, 0, 0, 0.089);
+}
+
+
+#ads-new-url{
+    position: absolute;
+    border: none;
+    height: 5vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color: rgb(233, 233, 233);
+    outline: none;
+    color: rgba(0, 0, 0, 0.87);
+    border-bottom: 2px solid #1da0f200;
+    resize: none;
+    transition: all 0.1s ease-in-out;
+    font-family: 'Heebo', sans-serif;
+    padding: 0.87vh;
+    font-size: 1.4vh;
+    top: 35%;
+    width: 22vh;
+    border-radius: 0 0 1vh 1vh;
+    box-shadow: inset 0 0 2vh 0 rgba(0, 0, 0, 0.089);  
+}
+
+#ads-new-message::-webkit-scrollbar {
+    display: none;
+}
+
+#ads-new-message::placeholder {
+    font-size: 1.4vh;
+    font-family: 'Heebo', sans-serif;
+    color: rgba(0, 0, 0, 0.719);
+}
+
+#ads-new-url::placeholder {
+    font-size: 1.4vh;
+    font-family: 'Heebo', sans-serif;
+    color: rgba(0, 0, 0, 0.719);
+}
+
+#ads-new-message:focus {
+    border-left: 5px solid #ffb703;
+}
+
+.ads-selectfromgallery {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    right: 2%;
+    top: 38%;
+}
+
+.ads-selectfromgallery i {
+    color: white;
+    padding-left: 20%;
+    transition: color 0.6s;
+}
+
+.ads-selectfromgallery:hover i {
+    color:  #0096c7;
+}
+
+.ads-nonenotify{
+    position: absolute;
+    width: 90%;
+    height: 10%;
+    left: 5%;
+    color: white;
+    font-size: 90%;
+    text-align: center;
+    top: 15%;
+}
+
+.ads-editadd{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-color: #141414;
+    display: none;
+    bottom: -80%;
+}
+
+
+#ads-edit-message {
+    position: absolute;
+    border: none;
+    height: 12vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 8px;
+    background-color: rgb(233, 233, 233);
+    outline: none;
+    border-left: 2px solid #1da0f200;
+    resize: none;
+    transition: all 0.1s ease-in-out;
+    font-family: 'Heebo', sans-serif;
+    padding: 0.87vh;
+    font-size: 1.4vh;
+    top: 5%;
+    width: 22vh;
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: inset 0 0 2vh 0 rgba(0, 0, 0, 0.089);
+}
+
+.ads-edit-index {
+    position: relative;
+    width: 30%;
+    height: 15%;
+    top: 75%;
+    float: left;
+    margin-left: 5%;
+    left: 13%;
+    outline: none;
+}
+
+.bank-send-container{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: 5%;
+    background-color: #284b63;
+}
+
+.bank-recents-container {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: 50%;
+    background-color: #284b63; 
+}
+
+
+.send-header-p{
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    text-align: center;
+    color: #fca311;
+    font-size: 85%;
+}
+
+.recents-header-p{
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    text-align: center;
+    color: #fca311;
+    font-size: 85%;
+}
+
+.apps-header {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 5%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+
+.bank-ics {
+    position: relative;
+    width: 70%;
+    height: 20%;
+    left: 15%;
+    margin-top: 1%;
+    border: none;
+    outline: none;
+    resize: none;
+    /* transition: all 0.1s ease-in-out; */
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.4vh;
+    /* background: #202026; */
+    top: 15%;
+    color: black;
+    box-shadow: inset 0 0 2vh 0 rgba(0, 0, 0, 0.089);
+    border-radius: 5px;
+}
+
+.bank-ics:focus {
+    border-left: 5px solid #1da0f2b0;
+}
+
+.bank-app-sendmoney {
+    position: absolute;
+    width: 10%;
+    height: 5%;
+    left: 45%;
+    bottom: 10%;
+    color: white;
+    transition: color 0.4s;
+}
+
+.bank-app-sendmoney i:hover {
+    color:  #1da0f2b0;
+}
+
+.cryptocurrency-side-index-change{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    background-color: #fca311;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 0.4s all;
+}

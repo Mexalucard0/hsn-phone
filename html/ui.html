@@ -1,0 +1,1431 @@
+<html>
+	<head>
+	<link rel="stylesheet" href="reset.css" type="text/css">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	</head>
+	<body>
+		<div class="phone-photo-container">
+		</div>
+		<div class="hsn-phonemain">
+			<img src="./images/pixel4.png" class="phoneimg" id="phoneimg">
+			<div class="hsn-phonemain-container">
+				<div class="hsn-phonemain-apps">
+					<div class="hsn-phone-apps" id="AppStore">
+						<div class="hsn-phone-apps-iconside" style="background-color: rgb(12, 163, 218);">
+							<i class="fab fa-app-store" style="left: 18%;"></i>
+						</div>
+						<div class="hsn-phone-apps-textside">App Store</div>
+					</div>
+
+					<div class="hsn-phone-apps" id="Contacts">
+						<div class="hsn-phone-apps-iconside" style="background-color: #023047;">
+							<i class="fas fa-id-badge" style="padding-left: 30%;"></i>
+						</div>
+						<div class="hsn-phone-apps-textside">Contacts</div>
+					</div>
+
+					<div class="hsn-phone-apps" id="Notes">
+						<div class="hsn-phone-apps-iconside" style="background-color: #99335c;">
+							<i class="fas fa-clipboard" style="padding-left: 25%;"></i>
+						</div>
+						<div class="hsn-phone-apps-textside">Notes</div>
+					</div>
+					<!-- <div class="hsn-phone-apps" id="Calls">
+						<div class="hsn-phone-apps-iconside" style="background-color: rgb(37, 165, 20);">
+							<i class="fas fa-phone" style="left: 19%;"></i>
+						</div>
+						<div class="hsn-phone-apps-textside">Calls</div>
+					</div> -->
+					<div class="hsn-phone-apps" id="Bank">
+						<div class="hsn-phone-apps-iconside" style="background-color: rgb(177, 52, 59);">
+							<i class="fas fa-university" style="left: 18%;"></i>
+						</div>
+						<div class="hsn-phone-apps-textside">Bank</div>
+					</div>
+					<div class="hsn-phone-apps" id="Mail">
+						<div class="hsn-phone-apps-iconside" style="background-color: rgb(154, 9, 202);">
+							<i class="fas fa-envelope" style="left: 18%;"></i>
+						</div>
+						<div class="hsn-phone-apps-textside">Mail</div>
+					</div>
+					<div class="hsn-phone-apps" id="State">
+						<div class="hsn-phone-apps-iconside" style="background-color: rgb(209, 87, 6);">
+							<i class="fas fa-globe" style="left: 18%;"></i>
+						</div>
+						<div class="hsn-phone-apps-textside">State</div>
+					</div>
+					<div class="hsn-phone-apps" id="Billings">
+						<div class="hsn-phone-apps-iconside" style="background-color: #4f5d75;">
+							<i class="fas fa-bold" style="padding-left: 32%;"></i>
+						</div>
+						<div class="hsn-phone-apps-textside">Billings</div>
+					</div>
+					<!-- <div class="hsn-phone-apps" id="Ambulance">
+						<div class="hsn-phone-apps-iconside" style="background-color: #ff595e;">
+							<i class="fas fa-user-md"></i>
+						</div>
+						<div class="hsn-phone-apps-textside">Ambulance</div>
+					</div> -->
+					<!-- <div class="hsn-phone-apps" id="Polices">
+						<div class="hsn-phone-apps-iconside" style="background-color: #00509d;">
+							<i class="fas fa-user-shield"></i>
+						</div>
+						<div class="hsn-phone-apps-textside">Polices</div>
+					</div>
+						-->
+					<div class="hsn-phone-apps" id="settings">
+						<div class="hsn-phone-apps-iconside" style="background-color: #f15bb5;">
+							<i class="fas fa-cog"></i>
+						</div>
+						<div class="hsn-phone-apps-textside">Settings</div>
+					</div>
+					<div class="hsn-phone-apps" id="gallery">
+						<div class="hsn-phone-apps-iconside" style="background-color: #ff9f1c;">
+							<i class="fas fa-image"></i>
+						</div>
+						<div class="hsn-phone-apps-textside">Gallery</div>
+					</div>
+					<div class="hsn-phone-apps" id="messages">
+						<div class="hsn-phone-apps-iconside" style="background-color: #197278;">
+							<i class="fas fa-comment-alt"></i>
+						</div>
+						<div class="hsn-phone-apps-textside">Messages</div>
+					</div>
+					<div class="hsn-phone-apps" id="camera">
+						<div class="hsn-phone-apps-iconside" style="background-color: #386641;">
+							<i class="fas fa-camera"></i>
+						</div>
+						<div class="hsn-phone-apps-textside">Camera</div>
+					</div>
+					
+				</div>
+				<!-- <div class="hsn-phonemain-bottomcontainer">
+					<div class="hsn-phonemain-bottomcontainer-settings">
+						<div class="hsn-phonemain-bottomcontainer-settings-photo">
+							<i class="fas fa-cog"></i>
+						</div>
+					</div>
+					<div class="hsn-phonemain-bottomcontainer-gallery">
+						<div class="hsn-phonemain-bottomcontainer-gallery-photo">
+							<i class="far fa-image"></i>
+						</div>
+					</div>
+
+					<div class="hsn-phonemain-bottomcontainer-whatsapp">
+						<div class="hsn-phonemain-bottomcontainer-whatsapp-photo">
+							<i class="fab fa-whatsapp"></i>
+						</div>
+					</div>
+					<div class="hsn-phonemain-bottomcontainer-camera">
+						<div class="hsn-phonemain-bottomcontainer-camera-photo">
+							<i class="fas fa-camera"></i>
+						</div>
+					</div>
+
+				</div> -->
+				<div class="hsn-phonemain-closephone"></div>
+
+				<civ class="hsn-phonemain-camera">
+					<canvas id="screenshot-canvas"></canvas>
+				</civ>
+				<div class="hsn-phonemain-gallery-entry">
+					<div class="gallery-topside">
+						<div  class="gallery-topsideinfoicon">
+							<i class="fas fa-info-circle"></i>
+						</div>
+						<div class="gallery-topsidemessage">
+							Double click for delete image!
+						</div>
+					</div>
+					<div class="gallery-nonenotify">
+						You don't have a photo yet!
+					</div>
+					<div class="gallery-bottomside">
+
+						<!-- <div class="gallery-photos">
+							<img id="gallery-photoindex" ondblclick="dblclicktophoto()" src="https://cdn.discordapp.com/attachments/830240180521795657/851559541127643186/unknown.png">
+						</div>
+						<div class="gallery-photos">
+							<img id="gallery-photoindex" ondblclick="dblclicktophoto()" src="https://cdn.discordapp.com/attachments/800735373965525076/851751616038043648/screenshot.jpg">
+						</div>
+						<div class="gallery-photos">
+							<img id="gallery-photoindex" ondblclick="dblclicktophoto()" src="https://cdn.discordapp.com/attachments/800735373965525076/820195324248195072/default_profile_400x400.png">
+						</div>
+						<div class="gallery-photos">
+							<img id="gallery-photoindex" ondblclick="dblclicktophoto()" src="https://cdn.discordapp.com/attachments/808012685807321088/814402914176466954/SGeyGixQ_400x400.jpg">
+						</div>
+						<div class="gallery-photos">
+							
+						</div>
+						<div class="gallery-photos">
+							
+						</div>
+						<div class="gallery-photos">
+							
+						</div>
+						<div class="gallery-photos">
+							
+						</div>
+						<div class="gallery-photos">
+							
+						</div>
+						<div class="gallery-photos">
+							
+						</div> -->
+					</div>
+
+				</div>
+
+
+				
+
+				<div class="hsn-phonemain-state-entry">
+					<div class="state-city-text">
+						Los Santos Government
+					</div>
+					<div class="state-active-jobs">Active Officers</div>
+					<div class="state-nonenotify">There is nobody right now!</div>
+					<div class="state-jobs-container">
+
+					</div>
+					<div class="state-jobs-name banks-bottom-acts-active" id="police">
+						Police
+					</div>
+					<div class="state-jobs-name" id="ambulance">
+						Ambulance
+					</div>
+					<div class="state-jobs-name" id="lawyer">
+						Lawyer
+					</div>
+					<div class="state-jobs-name" id="taxi">
+						Taxi
+					</div>
+				</div>
+				<div class="hsn-phonemain-billing-entry">
+					<div class="billing-header">
+						<p>
+							My Billings
+						</p>
+					</div>
+					<div class="billing-header-totalbill">
+						Total Bills
+					</div>
+					<div class="billing-header-totalbill-index">
+						0
+					</div>
+					<button class="bills-payall">Pay All</button>
+					<div class="bills-payall-index">
+						$0
+					</div>
+
+					<div class="billing-bcontainer">
+						<!-- <div class="myBills">
+							<div class="myBills-cost">$1500</div>
+							<div class="myBills-reason">Kill a person</div>
+						</div>
+						<div class="myBills">
+							<div class="myBills-cost">$1500</div>
+							<div class="myBills-reason">Kill a person</div>
+						</div>
+						<div class="myBills">
+							<div class="myBills-cost">$1500</div>
+							<div class="myBills-reason">Kill a person</div>
+						</div> -->
+					</div>
+					<div class="billing-nonenotify">
+						You don't have any bill!
+					</div>
+				</div>
+				
+
+				<div class="hsn-phonemain-cars-entry">
+					<p>myCars</p>
+					<div class="cars-nonenotify">
+						You don't have any vehicle yet!
+					</div>
+					<div class="cars-container">
+						<!-- <div class="cars-index">
+							<div class="carlabel">
+								Sultan
+							</div>
+							<div class="carplate">
+								123KH
+							</div>
+							<div class="carinfo notstored">
+								<div class="carinfo-box">This car doesn't stored!</div>
+								<i class="fas fa-map-marker-alt"></i>
+							</div>
+						</div> -->
+					</div>
+				</div>
+				<div class="hsn-phonemain-mail-entry">
+					<div class="mail-welcomeside">Welcome!</div>
+					<div class="mail-accountside">testemail@hotmail.com</div>
+					<div class="mails-nonenotify">You don't have any mail!</div>
+					<div class="mail-mailside">
+						<!-- <div class="mail-mails">
+							<div class="mail-mails-appname">TikTok</div>
+							<div class="mail-mails-message">Test Message🤚 </div>
+							<div class="mail-mails-time">3 gün önce</div>
+						</div>
+						<div class="mail-mails">
+							<div class="mail-mails-appname">TikTok</div>
+							<div class="mail-mails-message">Test Message🤚 </div>
+							<div class="mail-mails-time">3 gün önce</div>
+						</div> -->
+					</div>
+					<div class="mail-showmail">
+						<!-- <div class="mail-fromSrc">Undefined kişisinden yeni bir mail var!</div>
+						<div class="mail-fromText">Amına korum senin😁!</div>
+						<button id="mail-delete">Delete</button> -->
+					</div>
+				</div>
+				<div class="hsn-phonemain-apps-entry">
+					<div class="apps-header">
+						<div class="twitter">
+							<div class="twitter-photoside">
+								<p>World.</p>
+								<strong>Most Downloaded</strong>
+							</div>
+							<div class="twitter-textside">
+								<div class="apss-name"><p>Twitter</p></div>
+								<div class="download" id="Twitter"><i class="fas fa-cloud-download-alt"></i></div>
+							</div>
+						</div>
+						<div class="Advertisement">
+							<div class="Advertisement-photoside">
+								<p>Advertisement.</p>
+								<strong>Advertisement</strong>
+							</div>
+							<div class="Advertisement-textside">
+								<div class="apss-name"><p>Advertisement</p></div>
+								<div class="download" id ="Advertisement"><i class="fas fa-cloud-download-alt"></i></div>
+							</div>
+						</div>
+						<div class="cars">
+							<div class="cars-photoside">
+								<p>cars.</p>
+								<strong>Customize Your Cars</strong>
+							</div>
+							<div class="cars-textside">
+								<div class="apss-name"><p>Cars</p></div>
+								<div class="download" id ="Cars"><i class="fas fa-cloud-download-alt"></i></div>
+							</div>
+						</div>
+						<div class="finance">
+							<div class="finance-photoside">
+								<p>finance.</p>
+								<strong>Earn Money</strong>
+							</div>
+							<div class="finance-textside">
+								<div class="apss-name"><p>Finance</p></div>
+								<div class="download" id ="Finance"><i class="fas fa-cloud-download-alt"></i></div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="hsn-phonemain-settings-entry">
+					<div class="s-plypoto">
+						
+					</div>
+					<div class="s-pylname">
+						Hasan
+					</div>
+					<div class="s-phonenumber">
+						123456789
+					</div>
+					<div class="s-settings-index-container">
+						<div class="s-settings-index" s-id="background">
+							<div class="s-index-icon">
+								<i class="fas fa-camera"></i>
+							</div>
+							<div class="s-index-text">
+								Background
+							</div>
+						</div>
+						<div class="s-settings-index" s-id="anon-call">
+							<div class="s-index-icon">
+								<i class="fas fa-user-slash" style="color: #ae2012;"></i>
+							</div>
+							<div class="s-index-text">
+								Anonymous Call
+							</div>
+						</div>
+<!-- 
+						<div class="s-settings-index" s-id="callsound"> 
+							<div class="s-index-icon">
+								<i class="fas fa-volume-up"></i>
+							</div>
+							<div class="s-index-text">
+								Ring Sound
+							</div>
+						</div> -->
+						<div class="s-cont">
+							<div class="s-m-img">
+							</div>
+							<div class="phone-name">
+								hsn Phone
+							</div>
+							<div class="phone-version">
+								<strong>Version</strong>: 1.0
+							</div>
+							<div class="phone-totalapp">
+
+							</div>
+							<div class="phone-serialnumber">
+								
+							</div>
+						</div>
+					</div>
+					<div class="settings-pages-background">
+						<div class="s-header">
+							Edit Background
+						</div>
+						<div class="s-background-box">
+
+						</div>
+						<p>Double click to change photo!</p>
+						<input type="text"  class="input-settings" placeholder="URL(Press Enter)">
+					</div>
+					<div class="settings-pages-callsound">
+						<div class="s-header">
+							Change Ring Sound
+						</div>
+					</div>
+				</div>
+				<div class="hsn-phonemain-finance-entry">
+					<div class="finance-main">
+						<div class="finance-topside">
+							<div class="finance-plyname">
+								Unknown
+							</div>
+							<div class="finance-cryptoid">
+								Unknown
+							</div>
+							<div class="finance-totalbalance">
+								Total Bank Balance
+							</div>
+							<div class="finance-totalbalance-index">
+								$0.00
+							</div>
+						</div>
+						<div class="finance-bottomside">
+							<div class="cryptocurrency-side">
+								<div class="cryptocurrency-side-index" id="bitcoin">
+									<div class="cryptocurrency-side-icon">
+										<i class="fab fa-btc"></i>
+									</div>
+									<div class="cryptocurrency-side-label">
+										Bitcoin
+									</div>
+									<div class="cryptocurrency-decrease" financeid="bitcoin">
+										<p>0.0</p>
+									</div>
+									<div class="cryptocurrency-side-index-change"></div>
+								</div>
+
+								<div class="cryptocurrency-side-index" id="ethereum">
+									<div class="cryptocurrency-side-icon">
+										<i class="fab fa-ethereum"></i>
+									</div>
+									<div class="cryptocurrency-side-label">
+										Ethereum
+									</div>
+									<div class="cryptocurrency-decrease" financeid="ethereum">
+										<p>0.0</p>
+									</div>
+									<div class="cryptocurrency-side-index-change"></div>
+								</div>
+
+								<div class="cryptocurrency-side-index" id="ggcoin">
+									<div class="cryptocurrency-side-icon">
+										<i class="fab fa-gg"></i>
+									</div>
+									<div class="cryptocurrency-side-label">
+										GGCoin
+									</div>
+									<div class="cryptocurrency-decrease" financeid="ggcoin">
+										<p>0.0</p>
+									</div>
+									<div class="cryptocurrency-side-index-change"></div>
+								</div>
+
+								<div class="cryptocurrency-side-index" id="devcoin">
+									<div class="cryptocurrency-side-icon">
+										<i class="fab fa-dev"></i>
+									</div>
+									<div class="cryptocurrency-side-label">
+										DevCoin
+									</div>
+									<div class="cryptocurrency-decrease" financeid="devcoin">
+										<p>0.0</p>
+									</div>
+									<div class="cryptocurrency-side-index-change"></div>
+								</div>
+							</div>
+							<div class="finance-transactions" style="position: absolute; width: 70%; height: 5%; color: #1d3557; top: 72%; font-size: 80%; font-weight: bold; left: 10%;">Transactions</div>
+							<div class="finance-transactions-container">
+								<div class="finance-transactions-none">You don't have any transaction!</div>
+								<!-- <div class="finance-transactions-container-index">
+									<div class="finance-transactions-container-index-icon">
+										<i class="fab fa-ethereum"></i>
+									</div>
+									<div class="finance-transactions-container-index-label">
+										Transaction 
+									</div>
+									<div class="finance-transactions-container-index-label">
+										Amount
+									</div>
+
+									<div class="finance-transactions-container-index-text">
+										1561aa51a561
+									</div>
+									<div class="finance-transactions-container-index-text">
+										0.00002
+									</div>
+
+								</div>
+
+								<div class="finance-transactions-container-index">
+									<div class="finance-transactions-container-index-icon">
+										<i class="fab fa-ethereum"></i>
+									</div>
+									<div class="finance-transactions-container-index-label">
+										Transaction 
+									</div>
+									<div class="finance-transactions-container-index-label">
+										Amount
+									</div>
+
+									<div class="finance-transactions-container-index-text">
+										1561aa51a561
+									</div>
+									<div class="finance-transactions-container-index-text">
+										0.00002
+									</div>
+
+								</div> -->
+							</div>
+							<button class="finance-buybutton">Buy</button>
+						</div>
+					</div>
+					<div class="finance-buy-side">
+						<div class="finance-topside">
+							<div class="commission">
+								Commission : 5%
+							</div>
+							<input type="text" class="finance-buyside-input"  id="transaction" placeholder="Transaction ID">
+							<input type="text" class="finance-buyside-input"  id="finance-amount" placeholder="Amount">
+							<div class="finance-buyside-icons">
+								<div class="finance-buyside-icons-index selectedcrypto" cryptoindex="bitcoin">
+									<i class="fab fa-btc"></i>
+								</div>
+								<div class="finance-buyside-icons-index" cryptoindex="ethereum">
+									<i class="fab fa-ethereum"></i>
+								</div>
+								<div class="finance-buyside-icons-index" cryptoindex="ggcoin">
+									<i class="fab fa-gg"></i>
+								</div>
+								<div class="finance-buyside-icons-index" cryptoindex="devcoin">
+									<i class="fab fa-dev"></i>
+								</div>
+							</div>
+							<button class="buyside-newTransaction">Send</button>
+						</div>
+						<div class="finance-bottomside" style="position:absolute; width :100%; height: 65%; top: 30%; ">
+								<div class="crypto-boxs">
+									<div class="crypto-boxs-buy" cryptoid="bitcoin">
+										<p>Bitcoin - Buy</p>
+										<div class="crypto-iconnn" idd="buy-bitcoin">
+											<i class="fab fa-btc"></i>
+										</div>
+										<input type="number" id="crypto-buy-amount-bitcoin-buy" style="text-align: center;" class="crypto-input-" min=0 value="0" oninput="validity.valid||(value='');" ></input>
+										<div class="rotate" id="bitcoin">
+											<i class="fas fa-sync-alt"></i>
+										</div>
+									</div>
+
+									<div class="crypto-boxs-sell" cryptoid2="bitcoin">
+										<p>Bitcoin - Sell</p>
+										<div class="crypto-iconnn" idd="sell-bitcoin">
+											<i class="fab fa-btc"></i>
+										</div>
+										<input type="number" id="crypto-buy-amount-bitcoin-sell" style="text-align: center;" class="crypto-input-" min=0 value="0"  ></input>
+										<div class="rotate2" id2="bitcoin">
+											<i class="fas fa-sync-alt"></i>
+										</div>
+									</div>
+
+								</div>
+								<div class="crypto-boxs" >
+									<div class="crypto-boxs-buy" cryptoid="ethereum">
+										<p>Ethereum - Buy</p>
+										<div class="crypto-iconnn" idd="buy-ethereum">
+											<i class="fab fa-ethereum"></i>
+										</div>
+										<input type="number" id="crypto-buy-amount-ethereum-buy" style="text-align: center;" class="crypto-input-" min=0 value="0" oninput="validity.valid||(value='');" ></input>
+										<div class="rotate" id="ethereum">
+											<i class="fas fa-sync-alt"></i>
+										</div>
+									</div>
+									<div class="crypto-boxs-sell" cryptoid2="ethereum">
+										<p>Ethereum - Sell</p>
+										<div class="crypto-iconnn" idd="sell-ethereum">
+											<i class="fab fa-ethereum"></i>
+										</div>
+										<input type="number" id="crypto-buy-amount-ethereum-sell" style="text-align: center;" class="crypto-input-" min=0 value="0"  ></input>
+										<div class="rotate2" id2="ethereum">
+											<i class="fas fa-sync-alt"></i>
+										</div>
+									</div>
+								</div>
+								<div class="crypto-boxs" >
+									<div class="crypto-boxs-buy" cryptoid="ggcoin">
+										<p>GGCoin - Buy</p>
+										<div class="crypto-iconnn" idd="buy-ggcoin">
+											<i class="fab fa-gg"></i>
+										</div>
+										<input type="number" id="crypto-buy-amount-ggcoin-buy" style="text-align: center;" class="crypto-input-" min=0 value="0" oninput="validity.valid||(value='');" ></input>
+										<div class="rotate" id="ggcoin">
+											<i class="fas fa-sync-alt"></i>
+										</div>
+									</div>
+									<div class="crypto-boxs-sell" cryptoid2="ggcoin">
+										<p>GGCoin - Sell</p>
+										<div class="crypto-iconnn" idd="sell-ggcoin">
+											<i class="fab fa-gg"></i>
+										</div>
+										<input type="number" id="crypto-buy-amount-ggcoin-sell" style="text-align: center;" class="crypto-input-" min=0 value="0"  ></input>
+										<div class="rotate2" id2="ggcoin">
+											<i class="fas fa-sync-alt"></i>
+										</div>
+									</div>
+								</div>
+								<div class="crypto-boxs" >
+									<div class="crypto-boxs-buy" cryptoid="devcoin">
+										<p>Devcoin - Buy</p>
+										<div class="crypto-iconnn" idd="buy-devcoin">
+											<i class="fab fa-dev"></i>
+										</div>
+			
+										<input type="number" id="crypto-buy-amount-devcoin-buy" style="text-align: center;" class="crypto-input-" min=0 value="0" oninput="validity.valid||(value='');" ></input>
+										<div class="rotate" id="devcoin">
+											<i class="fas fa-sync-alt"></i>
+										</div>
+									</div>
+									<div class="crypto-boxs-sell" cryptoid2="devcoin">
+										<p>Devcoin - Sell</p>
+										<div class="crypto-iconnn" idd="sell-devcoin">
+											<i class="fab fa-dev"></i>
+										</div>
+										<input type="number" id="crypto-buy-amount-devcoin-sell" style="text-align: center;" class="crypto-input-" min=0 value="0"   ></input>
+										<div class="rotate2" id2="devcoin">
+											<i class="fas fa-sync-alt"></i>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class="hsn-phonemain-contacts-entry">
+					<div class="contacts-mainside" style="position: absolute; width: 100%; height: 100%;">
+						<p>Contacts</p>
+						<div class="addnewcontact">
+							Add
+						</div>
+						<div class="contacts-keyboard">
+							<i class="fas fa-keyboard"></i>
+						</div>
+						<div class="contacts-none">
+							You don't have any contact!
+						</div>
+						<div class="number-index">
+							<div class="numbers">#</div>
+							<div class="numbers">A</div>
+							<div class="numbers">B</div>
+							<div class="numbers">C</div>
+							<div class="numbers">D</div>
+							<div class="numbers">E</div>
+							<div class="numbers">F</div>
+							<div class="numbers">G</div>
+							<div class="numbers">H</div>
+							<div class="numbers">I</div>
+							<div class="numbers">J</div>
+							<div class="numbers">K</div>
+							<div class="numbers">L</div>
+							<div class="numbers">M</div>
+							<div class="numbers">N</div>
+							<div class="numbers">O</div>
+							<div class="numbers">P</div>
+							<div class="numbers">Q</div>
+							<div class="numbers">R</div>
+							<div class="numbers">S</div>
+							<div class="numbers">T</div>
+							<div class="numbers">U</div>
+							<div class="numbers">V</div>
+							<div class="numbers">W</div>
+							<div class="numbers">X</div>
+							<div class="numbers">Y</div>
+							<div class="numbers">Z</div>
+						</div>
+						<div class="contacts-contactside" style=" position: absolute; width: 80%; height: 60%; top: 20%; left: 5%; overflow-x: hidden;overflow-y: visible;  ">
+							<!-- <div class="contact">
+								<div class="contact-photo"> <img src="https://cdn-amk.sozcu.com.tr/amk-resimler/2020/05/iecrop/mete-kalkavan_16_9_1566383420_1_1_1589229553-400x400.jpg"> </div>
+								<div class="contact-name">Mete Kalkavan</div>
+								<div class="contact-phonenumber">1561651</div>
+							</div> -->
+						</div>
+					</div>
+					
+					<div class="contact-showcontact" style="display: none;" >
+						<div class="showcontact-plyphoto">
+							
+						</div>
+						<div class="showcontact-plyname">
+							Hasan Test
+						</div>
+						<div class="showcontact-number">
+							0123456789
+						</div>
+						<div class="showcontact-index" id="call">
+							<i class="fas fa-phone-alt"></i>
+						</div>
+						<div class="showcontact-index" style="background: #6c5aee;" id="message">
+							<i class="fas fa-envelope"></i>
+						</div>
+						<div class="contact-showcontact-bottomside">
+							<div class="bottomside-settings" id="delete">
+								<div class="settings-header">Delete Contact</div>
+								<div class="bottomside-settings-iconside">
+									<i class="fas fa-trash-alt"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contact-keyboard-page" style="display: none;">
+						<div class="contacts-shownumberr" id="contacts-shownumber">
+							<p></p>
+						</div>
+						<div class="contacts-numbers" data-number="1">1</div>
+						<div class="contacts-numbers" data-number="2">2</div>
+						<div class="contacts-numbers" data-number="3">3</div>
+						<div class="contacts-numbers" data-number="4">4</div>
+						<div class="contacts-numbers" data-number="5">5</div>
+						<div class="contacts-numbers" data-number="6">6</div>
+						<div class="contacts-numbers" data-number="7">7</div>
+						<div class="contacts-numbers" data-number="8">8</div>
+						<div class="contacts-numbers" data-number="9">9</div>
+						<div class="contacts-numbers" data-number="Call">Call</div>
+						<div class="contacts-numbers" data-number="0">0</div>
+						<div class="contacts-numbers" data-number="Back">Back</div>
+					</div>
+					<div class="contact-addnewcontact" style="display: none; width: 100%; height: 100%">
+						<input type="text" class="newcontact-inputs"  id="contact-name" placeholder="Name">
+						<input type="text" class="newcontact-inputs"  id="contact-phonenumber" placeholder="Phone Number">
+						<button class="newcontact-submit">Submit</button>
+					</div>
+				</div>
+				
+
+				<div class="hsn-phonemain-messages-entry">
+					<p>Messages</p>
+					<input type="text" id="messages-searchbar"  style="color: white;" onkeyup="HSN.SearchMessages()">
+					<!-- <div class="search-bar-icon"><i class="fas fa-search"></i></div> -->
+					<div class="messages-nonenotify">
+						You don't have any message yet!
+					</div>
+					<div class="messages-indexside">
+						<!-- <div class="messages-index">
+							<div class="messages-index-photo">
+								<img src="https://cdn.discordapp.com/attachments/800735373965525076/858801262476132402/asdasd.png">
+							</div>
+							<div class="messages-name">
+								Hasan Test
+							</div>
+							<div class="messages-index-text">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+							</div>
+							<div class="messages-index-time">
+								1s
+							</div>
+						</div> -->
+						
+					</div>
+					<div class="messages-messageindex">
+						<div class="messages-top-info">
+							<div class="top-info-photo">
+								<img src="https://cdn.discordapp.com/attachments/800735373965525076/858801262476132402/asdasd.png">
+							</div>
+							<div class="top-info-name">
+								aaa
+							</div>
+							<!-- <div class="top-info-settings">
+								<i class="fas fa-bars"></i>
+
+							</div> -->
+						</div>
+						<div class="messages-chatside">
+							<div class="messages-nonenotify-a">
+								You don't have any messages with this people!
+							</div>
+							<div class="messages-side">
+								<!-- <div class="messages-sender-container">
+									<div class="messages-messageside">
+										Nerdesim amk cocugu
+									</div>
+									<div class="messages-message-time">
+										1d
+									</div>
+								</div>
+								<div class="messages-me-container">
+									<div class="messages-messageside">
+										Geliyorum eve kanka
+									</div>
+									<div class="messages-photoside">
+										<img src="https://cdn.discordapp.com/attachments/800735373965525076/851721109166620702/screenshot.jpg">
+									</div>
+									<div class="messages-message-time">
+										1d
+									</div>
+								</div> -->
+							</div>
+							<input type="text" class="messages-text"  id="messages-text" placeholder="Bir mesaj yazın">
+							<div class="messages-features-container">
+								<div class="features-index" data-feature="gps">
+									<i class="fas fa-map-marker-alt" style="padding: 10% 28%;"></i>
+								</div>
+								<div class="features-index" data-feature="photo-camera">
+									<i class="fas fa-camera"></i>
+								</div>
+								<div class="features-index" data-feature="photo-gallery">
+									<i class="fas fa-image"></i>
+								</div>
+							</div>
+							<div class="messages-features">
+								<i class="fas fa-ellipsis-v"></i>
+							</div>
+							<div class="messages-send">
+								<i class="fas fa-arrow-up"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="format-message">
+					<div class="messages-messageindex-2">
+						<div class="messages-top-info">
+							<div class="top-info-photo">
+								<img src="https://cdn.discordapp.com/attachments/800735373965525076/858801262476132402/asdasd.png">
+							</div>
+							<div class="top-info-name">
+								Hasan Test
+							</div>
+							<div class="top-info-settings">
+								<i class="fas fa-bars"></i>
+
+							</div>
+						</div>
+						<div class="messages-chatside">
+							<div class="messages-nonenotify-a">
+								You don't have any messages with this people!
+							</div>
+							<div class="messages-side">
+								 
+							</div>
+							<input type="text" class="messages-text-2"  id="messages-text-2" placeholder="Bir mesaj yazın">
+							<div class="messages-features-container">
+								<div class="features-index" data-feature="gps">
+									<i class="fas fa-map-marker-alt" style="padding: 10% 28%;"></i>
+								</div>
+								<div class="features-index" data-feature="photo-camera">
+									<i class="fas fa-camera"></i>
+								</div>
+								<div class="features-index" data-feature="photo-gallery">
+									<i class="fas fa-image"></i>
+								</div>
+							</div>
+							<div class="messages-features">
+								<i class="fas fa-ellipsis-v"></i>
+							</div>
+							<div class="messages-send-2">
+								<i class="fas fa-arrow-up"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hsn-phonemain-gambling-entry">
+					<!-- <div class="gambling-autoscene">
+						<div class="autoscene-icon" id="autoscene-icon">
+							<i class="fas fa-dice-six"></i>
+						</div>
+						<div class="autoscene-text" id="autoscene-text">
+							
+						</div>
+					</div>
+					<div class="gambling-register">
+						<div id="gambling-header-text">Register</div>
+						<textarea id="gambling-inputs" style="text-align:left; padding-top:10px; padding-left:15px;"  placeholder="Username" cols="30" rows="10" spellcheck="false" required></textarea>
+						<textarea id="gambling-inputs" style="text-align:left; padding-top:10px; padding-left:15px;" placeholder="Password"  cols="30" rows="10" spellcheck="false" required></textarea>
+						<textarea id="gambling-inputs" style="text-align:left; padding-top:10px; padding-left:15px;" placeholder="Phone Number"  cols="30" rows="10" spellcheck="false" required></textarea>
+						<button class="gambling-send"  style="top: 65%;" id="login">Submit</button>
+					</div>
+					<div class="gambling-login">
+						<div id="gambling-header-text">Login</div>
+						<textarea id="gambling-inputs" style="text-align:left; padding-top:10px; padding-left:15px;"  placeholder="Username" cols="30" rows="10" spellcheck="false" required></textarea>
+						<textarea id="gambling-inputs" style="text-align:left; padding-top:10px; padding-left:15px;" placeholder="Password"  cols="30" rows="10" spellcheck="false" required></textarea>
+						<button class="gambling-send" id="login">Submit</button>
+						<div class="login-showcontainer"><p  style="color: rgba(255, 255, 255, 0.705); font-size: 70%; text-align: center;">Also you can create new account.;</p></div>
+						<div class="login-icon" onclick="HSN.CloseLogin()"><i class="fas fa-sign-in-alt"></i></div>
+					</div> -->
+					<div class="gambling-container">
+						<div class="gambling-plyphoto"><img src="images/gambling-player.jpg"></div>
+						<div class="gambling-plyname">Unknown</div>
+
+					</div>
+				</div>
+				<div class="hsn-phonemain-bank-entry">
+					<div class="bank-topcontainer">
+						<div class="bank-photo">
+
+						</div>
+						<div class="bank-plyName">
+							
+						</div>
+						<div class="bank-üstbilgiler-iban">
+							IBAN
+						</div>
+						<div class="bank-üstbilgiler-iban-index" >
+
+						</div>
+						<div class="bank-üstbilgiler-amount" >
+							Amount
+						</div>
+						<div class="bank-üstbilgiler-amount-index" >
+
+						</div>
+					</div>
+					<div class="bank-bottomcontainer">
+						<div class="bank-send-container">
+							<p class="send-header-p">Send Money</p>
+							<textarea class="bank-ics" id="bank-app-iban" style="padding-top: 4%; padding-left: 4%;" placeholder="IBAN"  cols="30" rows="10" spellcheck="false" required></textarea>
+							<input  type="number" id="bank-app-amount" class="bank-ics" style="padding-top: 2%; padding-left: 4%;"   placeholder="Amount" min=0 value="0" oninput="validity.valid||(value='');"></input>
+							
+							<div class="bank-app-sendmoney" onclick="HSN.SendMoney()">
+								<i class="fas fa-check-circle"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="hsn-phonemain-twitter-entry">
+					<div class="twitter-register-main">
+						<div class="twitter-app-symbol"><i class="fab fa-twitter"></i></div>
+						<div class="twitter-app-registertext">
+							<p>Create Account</p>
+						</div>
+						<input type="text" name="nameinput" id="nameinput" placeholder="Firstname - Lastname">
+						<div class="line"></div>
+						<input type="text" name="numberinput" id="numberinput"  maxlength = "8" placeholder="Username">
+						<div class="et">@</div>
+						<div class="line2"></div>
+						<input type="password" name="passwordinput" id="passwordinput" placeholder="Password" minlength="8" required>
+						<div class="password-show" id="register"><i class="far fa-eye"></i></div>
+						<div class="line3"></div>
+						<button class="twitter-nextbutton">Next</button>
+						<div class="login-showcontainer"><p  style="color: rgba(255, 255, 255, 0.705); font-size: 70%; text-align: center;">If you have an account;</p></div>
+						<div class="login-icon" onclick="HSN.OpenLogInPage()"><i class="fas fa-sign-in-alt"></i></div>
+					</div>
+					<div class="twitter-login">
+						<div class="twitter-app-symbol"><i class="fab fa-twitter"></i></div>
+						<div class="twitter-app-registertext">
+							<p>Login</p>
+						</div>
+						<input type="text" name="username" id="username" placeholder="Username">
+						<div class="line"></div>
+						<input type="password" name="login-passwordinput" id="login-passwordinput" placeholder="Password" minlength="8" required>
+						<div class="password-show" id="login" style="top: 40%;"><i class="far fa-eye"></i></div>
+						<div class="line2"></div>
+						<button onclick="HSN.TwitterLogIn()" class="twitter-loginbutton">Log In</button>
+					</div>
+					<div class="twitter-register-confirm">
+						<div class="twitter-app-symbol"><i class="fab fa-twitter"></i></div>
+						<div class="twitter-register-confirm-head">
+							<p>Customize your experience</p>
+						</div>
+						<div class="twitter-register-confirm-textside">
+							<p>Twitter gives you the convenience of accessing information from all over the world. Play it and stay informed about the world!</p>
+						</div>
+						<button class="confirm">Confirm</button>
+					</div>
+					<div class="twitter-main">
+						<div class="twitter-main-side">
+							<div class="twitternonenotify">		
+								No tweets yet!
+							</div>
+						</div>
+						<div class="twitter-addtweet-container">
+							<span>Send Tweet</span>
+							<textarea id="tweet-new-message" style="text-align:left; padding-top:10px; padding-left:15px;" placeholder="Message(Max 150 word)" cols="30" rows="10" spellcheck="false" maxlength = "150" required></textarea>
+                            <textarea id="tweet-new-url" style="text-align:left; padding-left:15px;" placeholder="Photo Url" cols="30" rows="10" spellcheck="false"></textarea>
+							<div class="twitter-selectfromgallery">
+								<i class="fas fa-image"></i>
+							</div>
+							<button class="send">Send</button>
+						</div>
+						<div class="twitter-settings-container">
+							<div class="twitter-settings-userphoto"></div>
+							<div class="twitter-settings-username-">Username</div>
+							<div class="twitter-settings-username"><p>Test</p></div>
+							<div class="twitter-settings-index" id="changephoto">
+								<p>Change Photo</p>
+								<div class="twitter-settings-index-class" id="changephoto">
+									<i class="fas fa-cog"></i>
+								</div>
+							</div>
+							<div class="twitter-settings-index" id="logout">
+								<p>Log Out</p>
+								<div class="twitter-settings-index-class" id="logout">
+									<i class="fas fa-sign-out-alt"></i>
+								</div>
+							</div>
+							<div class="twitter-settings-index" id="deleteaccount">
+								<p>Delete Account</p>
+								<div class="twitter-settings-index-class" id="deleteaccount">
+									<i class="fas fa-trash"></i>
+								</div>
+							</div>
+						</div>
+						<div class="twitter-main-bottomcontainer">
+							<div class="twitter-main-addtweet"><i class="fas fa-plus"></i></div>
+							<div class="twitter-settingspage"><i class="fas fa-bars"></i></div>
+						</div>
+					</div>
+				</div>
+				<div class="calls-main">
+					<div class="last-calls">
+						<div class="lastcallstextside">
+							<span>Last Calls</span>
+						</div>
+						<div class="player-lastcalls">
+							<div class="lastcalls-0notify">
+								<p>You don't have last call!</p>
+							</div>
+							<div class="lastcalls-container">
+								<!-- <div class="calls">
+									<div class="calls-callername"><p>Test 1 </p></div>
+									<div class="calls-time"><p>Wednesday</p></div>
+									<div class="calls-icon"><i class="fas fa-ellipsis-v"></i></div>
+								</div> -->
+							</div>
+						</div>
+					</div>
+					<div class="calls-callside">
+						<div class="buttons-output"><p id="outputtest"></p></div>
+						<div class="calls-buttonside">
+							<div class="callside-buttons" id="1"><p>1</p></div>
+							<div class="callside-buttons" id="2"><p>2</p></div>
+							<div class="callside-buttons" id="3"><p>3</p></div>
+							<div class="callside-buttons" id="4"><p>4</p></div>
+							<div class="callside-buttons" id="5"><p>5</p></div>
+							<div class="callside-buttons" id="6"><p>6</p></div>
+							<div class="callside-buttons" id="7"><p>7</p></div>
+							<div class="callside-buttons" id="8"><p>8</p></div>
+							<div class="callside-buttons" id="9"><p>9</p></div>
+							<div class="callside-buttons" id="0"><p>0</p></div>
+							<div class="callnumber"><i class="fas fa-phone"></i></div>
+						</div>
+						<div class="removeoutput">
+							<i class="fas fa-backspace"></i>
+						</div>
+						
+					</div>
+					<div class="calls-bottomcontainer">
+						<div class="interaction" id="call"><i class="fas fa-address-book"></i></div>
+						<div class="interaction" id="homepage"><i class="fas fa-home"></i></div>
+					</div>
+				</div>
+				<div class="hsn-phonemain-notes-entry">
+					<div class="notes-main">
+						<div class="notes-topcontainer">
+							<div class="notes-totalnotes">
+								Total Notes
+							</div>
+							<div class="notes-totalnotes-index">
+								0
+							</div>
+						</div>
+						<div class="notes-nonenotify">You don't have any notes!</div> 
+						<div class="notes-bottomcontainer">
+							
+						</div>
+						<div class="newNotee"><i class="fas fa-file"></i></div>
+					</div>
+					<div class="shownote">
+						<div class="notes-topcontainer">
+							<div class="notes-totalnotes">
+								Total Notes
+							</div>
+							<div class="notes-totalnotes-index">
+								0
+							</div>
+						</div>
+						<div class="notes-bottomcontainer-2">
+							<textarea id="notes-title" style="text-align:left; padding-top:10px; padding-left:15px;" placeholder="Title" cols="30" rows="10" spellcheck="false" required></textarea>
+							<textarea id="notes-text" style="text-align:left; padding-top:10px; padding-left:15px;" placeholder="Message" cols="30" rows="10" spellcheck="false" required></textarea>
+							<textarea id="notes-photo" style="text-align:left; padding-top:10px; padding-left:15px;" placeholder="Photo" cols="30" rows="10" spellcheck="false" required></textarea>
+							<div class="sendNote"><i class="fas fa-check-circle"></i></div>
+							<div class="notes-selectfromgallery">
+								<i class="fas fa-image"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hsn-phonemain-police-entry">
+					<div class="police-topside">
+						<div class="police-welcome">Welcome Hasan Test!</div>
+						<div class="police-job-label">Chief</div>
+						<div class="ambulance-logo">
+							<img src="./images/police-app.png">
+						</div>
+						<div class="ambulance-header-text">
+							<p>
+								Los Santos Police Department
+							</p>
+						</div>
+					</div>
+					<div class="police-bottomside">
+						<div class="police-indexside">
+							<button class="police-buttons policeselected" id="pbuttons-citizen">Citizen</button>
+							<button class="police-buttons" id="pbuttons-vehicle">Vehicle</button>
+							<div class="police-search-citizen">
+								<textarea id="police-search-citizen-input" style="text-align:left; padding-top:7px; padding-left:15px;" placeholder="Firstname | Lastname" cols="30" rows="10" spellcheck="false" required></textarea>
+								<div class="police-search" id="citizen">
+									<i class="fas fa-search"></i>
+								</div>
+								<div class="citizen-search-resultside">
+									<div class="noresults-search">
+										No resuts found!
+									</div>
+									<!-- 
+									<div class="citizen-result">
+										<p>Mert Aksakal</p> 
+									</div>
+									<div class="citizen-result">
+										<p>Mert Aksakal</p>
+									</div>
+									<div class="citizen-result">
+										<p>Mert Aksakal</p>
+									</div> -->
+								</div>
+							</div>
+							<div class="police-search-vehicle" style="display: none;">
+								<textarea id="police-search-vehicle-input" style="text-align:left; padding-top:7px; padding-left:15px;" placeholder="Plate" cols="30" rows="10" spellcheck="false" required></textarea>
+								<div class="police-search" id="vehicle">
+									<i class="fas fa-search"></i>
+								</div>
+								<div class="citizen-search-resultside">
+									<div class="noresults-search">
+										No resuts found!
+									</div>
+									<!-- 
+									<div class="citizen-result">
+										<p>Mert Aksakal</p> 
+									</div>
+									<div class="citizen-result">
+										<p>Mert Aksakal</p>
+									</div>
+									<div class="citizen-result">
+										<p>Mert Aksakal</p>
+									</div> -->
+								</div>
+							</div>
+						</div>
+						<div class="police-showply">
+							<div class="police-plyname">
+								Fullname
+							</div>
+							<div class="police-plyname-index">
+								Bilinmiyor
+							</div>
+							<div class="police-phonenumber">
+								P. Number
+							</div>
+							<div class="police-phonenumber-index">
+								Bilinmiyor
+							</div>
+							<div class="police-plyphoto">
+								<img  src="https://cdn.discordapp.com/attachments/800735373965525076/853346570547232789/c3646bc2291a86fababdba3af7ecd338.png">
+							</div>
+							<div class="pd-plyfile-container">
+								<div class="pd-plyfile-header">
+									Add Bolo
+								</div>
+								<textarea id="plyfile-textarea-reason" style="text-align:left; padding-top:7px; padding-left:15px;" placeholder="Reason" cols="30" maxlength = "70" rows="10" spellcheck="false" required></textarea>
+								<textarea id="plyfile-textarea-photo" style="text-align:left; padding-top:7px; padding-left:15px;" placeholder="Photo" cols="30" maxlength = "70" rows="10" spellcheck="false" required></textarea>
+								<div class="police-selectfromgallery">
+									<i class="fas fa-image"></i>
+								</div>
+								<div class="plyfile-submitbutton">
+									<i class="fas fa-check-circle"></i>
+								</div>
+							</div>
+							<div class="pd-plyfiles-container">
+								<div class="pd-plyfiles-none">
+									The person has not got any bolos!
+								</div>
+								
+							</div>
+						</div>
+						<div class="police-showvehdata">
+							<div class="showvehdata-header">
+								Car Information
+							</div>
+							<div class="showvehdata-info" id="owner">
+								<div class="showvehdata-icon">
+									<i class="fas fa-info-circle"></i>
+								</div>
+								<div class="showvehdata-title">
+									Owner
+								</div>
+								<div class="showvehdata-title-index">
+									Owner
+								</div>
+							</div>
+							<div class="showvehdata-info" id="plate">
+								<div class="showvehdata-icon">
+									<i class="fas fa-map-marker"></i>
+								</div>
+								<div class="showvehdata-title">
+									Plate
+								</div>
+								<div class="showvehdata-title-index">
+									Owner
+								</div>
+							</div>
+							<div class="showvehdata-info" id="model">
+								<div class="showvehdata-icon">
+									<i class="fas fa-car"></i>
+								</div>
+								<div class="showvehdata-title">
+									Model
+								</div>
+								<div class="showvehdata-title-index">
+									Owner
+								</div>
+							</div>
+							<div class="showvehdata-info" id="stored">
+								<div class="showvehdata-icon">
+									<i class="fas fa-parking"></i>
+								</div>
+								<div class="showvehdata-title">
+									Stored
+								</div>
+								<div class="showvehdata-title-index">
+									True
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="all-rights-reserved">
+						<div class="rights-icon">
+							<i class="fas fa-copyright"></i>
+						</div>
+						<div class="rights-message">
+							All rights reserved.
+						</div>
+					</div>
+				</div>
+
+				<div class="hsn-phonemain-ads-entry">
+					<div class="ads-header">
+						Advertisements
+					</div>
+					<div class="ads-index-container">
+						<div class="ads-nonenotify">
+							There is no ads yet!
+						</div>
+						
+						<!-- <div class="ads-index">
+							
+							<div class="ads-photo">
+
+							</div>
+							<div class="ads-playername">
+								Test
+							</div>
+							<div class="ads-indexs-tooltip-c">
+								<i class="fas fa-phone"></i>
+							</div>
+							<div class="ads-indexs-tooltip-m">
+								<i class="fas fa-envelope"></i>
+							</div>
+							<div class="ads-indexs-tooltip-e">
+								<i class="fas fa-edit"></i>
+							</div>
+							<div class="ads-indexs-tooltip-d">
+								<i class="fas fa-trash"></i>
+							</div>
+								<div class="ads-index-tooltip-msgside-msg">
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								</div>
+								<div class="ads-index-tooltip-msgside-photo">
+
+								</div>
+						</div> -->
+					</div>
+					<div class="ads-nads">
+
+					</div>
+					<div class="ads-editadd">
+						<textarea id="ads-edit-message" style="text-align:left; padding-top:10px; padding-left:15px;" placeholder="" cols="30" rows="10" spellcheck="false" maxlength = "150" required></textarea>
+						<button class="ads-edit-index" id="send">Send</button>
+						<button class="ads-edit-index" id="close">Close</button>
+					</div>
+					<div class="ads-newads-page" style="display: none;">
+						<textarea id="ads-new-message" style="text-align:left; padding-top:10px; padding-left:15px;" placeholder="Message(Max 150 word)" cols="30" rows="10" spellcheck="false" maxlength = "150" required></textarea>
+						<textarea id="ads-new-url" style="text-align:left; padding-left:15px;" placeholder="Photo Url" cols="30" rows="10" spellcheck="false"></textarea>
+						<div class="ads-selectfromgallery">
+							<i class="fas fa-image"></i>
+						</div>
+						<button class="ads-send">Send</button>
+					</div>
+				</div>
+				<div class="hsn-phonemain-ambulance-entry">
+					<div class="ambulance-topcontainer">
+						<div class="ambulance-welcome">Welcome Hasan Test!</div>
+						<div class="ambulance-job-label">Chief</div>
+						<div class="ambulance-logo">
+							<img src="./images/ambulance-app.png">
+						</div>
+						<div class="ambulance-header-text">
+							<p>
+								Los Santos Emergency Services
+							</p>
+						</div>
+					</div>
+					<div class="ambulance-bottomcontainer">
+						<div class="ambulance-topButtons ap-selected" id="CreateRecord"><p>Create</p></div>
+						<div class="ambulance-topButtons" id="TotalRecords"><p>Records</p></div>
+						<div class="ambulance-createcontainer">
+							<textarea id="ambulance-target" style="text-align:left; padding-top:4px; padding-left:15px;"  placeholder="Target Fullname" cols="30" rows="10" spellcheck="false" required></textarea>
+							<textarea id="ambulance-createtext" style="text-align:left; padding-top:10px; padding-left:15px;"  placeholder="Message" cols="30" rows="10" spellcheck="false" required></textarea>
+							<textarea id="ambulance-photo" style="text-align:left; padding-top:4px; padding-left:15px;"  placeholder="Photo" cols="30" rows="10" spellcheck="false" required></textarea>
+							<button class="ambulance-SubmitData">Submit</button>
+							<div class="ambulance-selectfromgallery">
+								<i class="fas fa-image"></i>
+							</div>
+						</div>
+						<div class="ambulance-recordscontainer" style="display: none;">
+							<div class="records-container">
+								<div class="ambulance-records-nonenotify">No records have been created yet!</div>
+								<!-- <div class="records-container-index">
+									<div class="ambulance-records-delete">
+										
+									</div>
+									<div class="ambulance-records-plyname">
+										Patient Name
+									</div>
+									<div class="ambulance-records-plyname-index">
+										Hasan Test
+									</div>
+									<div class="ambulance-records-message">
+										Patient Data
+									</div>
+									<div class="ambulance-records-message-index">
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+									</div>
+									<div class="ambulance-records-time">5 Gün Önce</div>
+									<div class="ambulance-records-photolink">
+										<div class="hovereffect">
+											1 Link!
+										</div>
+										<i class="fas fa-link"></i>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</div>
+					<!-- <div class="ambulance-topButtons" id="CreateRecord"><p>Create</p></div>
+					<div class="ambulance-topButtons" id="CreateRecord"><p>Records</p></div> -->
+					<div class="all-rights-reserved">
+						<div class="rights-icon">
+							<i class="fas fa-copyright"></i>
+						</div>
+						<div class="rights-message">
+							All rights reserved.
+						</div>
+					</div>
+				</div>
+				<div class="hsn-phonemain-gallery-entry-select">
+					<div class="gallery-topside">
+						<div class="close-galleryselect">
+							<i class="fas fa-times-circle"></i>
+						</div>
+						<div  class="gallery-topsideinfoicon">
+							<i class="fas fa-info-circle"></i>
+						</div>
+						<div class="gallery-topsidemessage">
+							Click for select image!
+						</div>
+					</div>
+					<div class="gallery-bottomside">
+						<div class="gallery-nonenotify">
+							You don't have a photo yet!
+						</div>
+					</div>
+				</div>
+				<div class="hsn-phone-changephotocontainer">
+					<textarea id="changephoto-textarea" style="text-align:left; padding-top:10px; padding-left:15px;" placeholder="Your Photo URL" cols="30" rows="10" spellcheck="false" required></textarea>
+					<div class="hsn-phone-changephotocontainer-icons" id="submit"><i class="fas fa-check" style="color: green;"></i></div>
+					<div class="hsn-phone-changephotocontainer-icons" id="close"><i class="fas fa-times" style="padding-left: 30%; color: red;"></i></div>
+				</div>
+				<div class="hsn-phonemain-notifications-entry">
+					<div class="notifications-date"><h1 id="date-s"></h1></div>
+					<div class="notifications-container"></div>
+				</div>
+
+				<div class="hsn-phonemain-topcontainer">
+					<div class="phonemain-accts">
+						<i class="fas fa-signal"></i>
+						<i class="fas fa-wifi"></i>
+						<i class="fas fa-battery-full"></i>
+					</div>
+					<div class="downloadapp">
+						<i class="fas fa-spinner"></i>
+					</div>
+					<div class="topcontainer-textside" >
+						<p id="clock-text"></p>
+					</div>
+					
+				</div>
+				<div class="ntfy-container">
+					<!-- <div class="hsn-phonemain-createnotification">
+						<div class="hsn-phonemain-createnotification-photo"><i class="fab fa-twitter"></i></div>
+						<div class="hsn-phonemain-createnotification-appname">Twitter</div>
+						<div class="hsn-phonemain-createnotification-time">just now</div>
+						<div class="hsn-phonemain-createnotification-comment">New message from Hasan.</div>
+						<div class="hsn-phonemain-createnotification-interactions" id="accept"></div>
+						<div class="hsn-phonemain-createnotification-interactions" id="decline"></div>
+					</div> -->
+				</div>
+
+
+				<div class="hsn-phonemain-goBack"></div>
+				<div class="phonenotification-container">
+					<div class="phonenotification-iconside"></div>
+					<div class="phonenotification-textside"><p></p></div>
+				</div>
+			</div>
+		</div>
+            <script src="./script.js" type="text/javascript"></script>
+			<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js" type="text/javascript"></script>
+	</body>
+</html>
+
+
