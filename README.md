@@ -19,4 +19,5 @@ end)
 ```
 https://hasan.tebex.io/package/4658624
 
-https://discord.gg/6FQhKDXBJ6
+https://discord.gg/vEshVAdQSj
+
